@@ -1,0 +1,48 @@
+@import "./shared/variables";
+
+.speed-test {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 90px;
+
+  .looking-glass {
+    position: absolute;
+    top: 90px;
+    color: $accent-yellow;
+  }
+
+
+  h2 {
+    display: inline-block;
+    width: 30%;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    .button {
+      float: right;
+    }
+  }
+
+  &__input-wrap {
+    display: flex;
+    margin-bottom: 20px;
+  }
+}
+
+.input {
+  border: none;
+  background: $gray-light;
+  font-size: 15px;
+  padding: 10px 25px;
+  width: 220px;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

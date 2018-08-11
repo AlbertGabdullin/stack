@@ -1,0 +1,40 @@
+@import "./shared/variables";
+
+.video-section {
+  padding-top: 110px;
+  padding-bottom: 70px;
+
+  h2 {
+    span {
+      font-weight: bold;
+      i {
+        font-style: normal;
+        color: $accent-yellow;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 80px;
+    
+    width: 50%;
+  }
+
+  &__right {
+    height: 300px;
+    width: 50%;
+    position: relative;
+    top: -60px;
+    padding-right: 80px;
+  }
+}
+

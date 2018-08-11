@@ -1,0 +1,10 @@
+@import "_mixins/font-face";
+
+@include font-face("museo", "../fonts/MuseoSansRegular/MuseoSansCyrl-300");
+@include font-face("museo", "../fonts/MuseoSansBold/MuseoSansCyrl-700", bold);
+@include font-face("museo-medium", "../fonts/MuseoSansMedium/MuseoSansCyrl-500");
+@include font-face("museo-medium-italic", "../fonts/MuseoSansMediumItalic/MuseoSansCyrl-500Italic");
+
+@include font-face("gothampro-medium", "../fonts/GothamProMedium/GothamPro-Medium");
+
+@include font-face("helvetica-medium", "../fonts/HelveticaNeueMedium/HelveticaNeueCyr-Medium");

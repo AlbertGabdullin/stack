@@ -1,0 +1,83 @@
+@import "./shared/variables";
+
+.advantages {
+  padding: 70px 60px 110px;
+  background: $gray-light;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-text {
+    width: 35%;
+    padding-left: 5%;
+
+    p {
+      margin-bottom: 25px;
+      color: #252627;
+    }
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+
+  &__item {
+    background: $gray;
+    margin: 10px;
+    padding: 40px;
+    color: #fff;
+
+    &-wrap {
+      width: 50%;
+
+      &:nth-child(1) {
+        .advantages__item {
+          margin-left: 0;
+        }
+      }
+      &:nth-child(2) {
+        .advantages__item {
+          margin-right: 0;
+        }
+      }
+      &:nth-child(3) {
+        .advantages__item {
+          margin-left: 0;
+        }
+      }
+      &:nth-child(4) {
+        .advantages__item {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-ico {
+      width: 60px;
+      margin-bottom: 30px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-name {
+      font-size: 24px;
+      margin-bottom: 23px;
+    }
+  }
+
+  &__read-more {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2e3033;
+  }
+}

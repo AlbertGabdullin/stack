@@ -1,0 +1,66 @@
+@import "./shared/variables";
+
+.head {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gray-light;
+
+  .wrap {
+    justify-content: space-between;
+  }
+
+  &-contacts {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      margin-right: 30px;
+      
+      &-link {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 5px;
+      }
+
+      &-text {
+        font-size: 12px;
+        color: #252725;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.logo {
+  display: inline-block;
+  max-width: 162px;
+  width: 100%;
+}
+
+.menu {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__item {
+    display: inline-block;
+
+    &-link {
+      display: inline-block;
+      font-family: $medium-font;
+      text-decoration: none;
+      color: #2e3033;
+      padding: 5px 17px;
+    }
+
+    &:first-child {
+      .menu__item-link {
+        padding-left: 0;
+      }
+    }
+  }
+}

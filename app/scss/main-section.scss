@@ -1,0 +1,159 @@
+@import "./shared/variables";
+
+.main {
+  background-color: $gray-light;
+  padding-top: 115px;
+  padding-bottom: 90px;
+  background-image: url("/img/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  &-content {
+    max-width: 500px;
+    margin-bottom: 110px;
+  }
+
+  &-description {
+    display: inline-block;
+    color: #3b4752;
+    margin-bottom: 40px;
+  }
+
+  &-services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+h1 {
+  margin-bottom: 20px;
+
+  span {
+    font-weight: bold;
+
+    i {
+      font-style: normal;
+      color: $accent-yellow;
+    }
+  }
+}
+
+
+
+.main__service {
+  display: block;
+  background: #2e3033;
+  color: #fff;
+  padding: 35px 35px 45px 35px;
+  margin: 10px 10px;
+
+  &-wrap {
+    max-width: 50%;
+
+    &:nth-child(1) {
+      .main__service {
+        margin-left: 0;
+      }
+    }
+    &:nth-child(2) {
+      .main__service {
+        margin-right: 0;
+      }
+    }
+    &:nth-child(3) {
+      .main__service {
+        margin-left: 0;
+      }
+    }
+    &:nth-child(4) {
+      .main__service {
+        margin-right: 0;
+      }
+    }
+
+  }
+
+  &-head {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  &-type {
+    font-size: 12px;
+    font-family: $medium-font;
+    color: $accent-yellow;
+    margin-bottom: 20px;
+  }
+
+  &-name {
+    font-size: 24px;
+  }
+
+  &-ico {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-description {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  &-advantages {
+    margin-bottom: 100px;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-price {
+    font-size: 16px;
+    font-family: $medium-font;
+
+    span {
+      font-size: 24px;
+    }
+
+    span.yellow {
+      color: $accent-yellow;
+      font-size: 24px;
+    }
+
+    &-nds {
+      font-size: 11px;
+      color: #7f8387;
+    }
+  }
+}
+
+.list {
+  list-style-type: none;
+
+  li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 15px;
+      left: 0;
+      top: 3px;
+      background-image: url("/img/icons/checked.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

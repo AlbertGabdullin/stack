@@ -1,0 +1,21 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+//colors
+$accent-yellow: #ff5b3e;
+$accent-blue: #3983e9;
+$gray: #2e3033;
+$gray-light: #e8ecf2;
+
+//fonts
+$default-font: 'museo', sans-serif;
+$medium-font: 'museo-medium', sans-serif;
+$italic-font: 'museo-medium-italic', sans-serif;
+
+$gotham-font: 'gothampro-medium', sans-serif;
+$helvetica-font: 'helvetica-medium', sans-serif;
