@@ -25,7 +25,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
+	return gulp.src('app/'+syntax+'/**/main.'+syntax+'')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
@@ -37,10 +37,10 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'./app/libs/modernizr/modernizr.js',
-		'./app/libs/jquery/jquery-1.11.2.min.js',
+		'./app/libs/jquery/dist/jquery.min.js',
 		'./app/libs/waypoints/waypoints.min.js',
-		'./app/libs/animate/animate-css.js',
-		'app/js/common.js',
+		'./app/libs/OwlCarousel/dist/owl.carousel.js',
+		'./app/libs/animate/animate-css.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)

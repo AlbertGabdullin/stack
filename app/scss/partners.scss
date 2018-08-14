@@ -1,0 +1,21 @@
+@import "./shared/variables";
+
+.partners {
+  padding: 60px 0 120px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: calc(100% / 7);
+    text-align: center;
+
+    img {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

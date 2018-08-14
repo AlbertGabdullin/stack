@@ -1,9 +1,10 @@
+@import "./shared/libs";
 @import "./shared/containers";
 @import "./shared/variables";
 @import "./shared/fonts";
-@import "./shared/libs";
 @import "./shared/typography";
 @import "./shared/buttons";
+
 
 ::placeholder {
 	color: #666;
@@ -22,6 +23,7 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: #252627;
+	margin: 0;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -43,6 +45,34 @@ body {
 	}
 }
 
+.read-more {
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: bold;
+	color: #2e3033;
+
+	&::after {
+		content: '';
+		display: inline-block;
+		position: relative;
+		right: -10px;
+		vertical-align: middle;
+		width: 13px;
+		height: 14px;
+		background-image: url("/img/right-arrow.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: .3s ease;
+	}
+
+	&:hover {
+		&::after {
+			right: -20px;
+		}
+	}
+}
+
 .text-center {
 	text-align: center;
 }
@@ -55,8 +85,109 @@ b, strong {
 	display: none;
 }
 
+.language-buttons {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	top: 178px;
+	width: 70px;
+
+	a {
+		margin-bottom: 10px;
+		display: flex;
+		width: 20px;
+		height: 20px;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		padding: 5px;
+		font-weight: bold;
+		color: $gray;
+		border-radius: 50%;
+		transition: .3s ease;
+
+		&:hover {
+			background: $accent-blue;
+			color: #fff;
+		}
+
+		&.active {
+			background: $accent-blue;
+			color: #fff;
+		}
+	}
+}
+
+.ip-button {
+	position: fixed;
+	bottom: 100px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	width: 70px;
+
+	a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		background: url('/img/icons/ip-button.svg');
+	}
+}
+
+.border-contacts {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: fixed;
+	right: 0;
+	bottom: 100px;
+	width: 70px;
+
+	a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		margin-bottom: 20px;
+
+		&.border-phone {
+			background-image: url('/img/icons/phone-button.svg');
+		}
+
+		&.border-mail {
+			background-image: url('/img/icons/mail-button.svg');
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.search-button {
+	position: fixed;
+	top: 178px;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	width: 70px;
+
+	a {
+		display: block;
+		width: 35px;
+		height: 35px;
+		background: url('/img/icons/search-button.svg');
+	}
+}
+
+
+
 @import "./header";
 @import "./main-section";
+@import "./counter-section";
 @import "./advantages";
 @import "./speed_test";
 @import "./video-section";
+@import "./useful-articles";
+@import "./partners";
+@import "./footer";

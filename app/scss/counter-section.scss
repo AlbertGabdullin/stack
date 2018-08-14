@@ -1,0 +1,131 @@
+@import "./shared/variables";
+
+.counter {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+
+    span {
+      font-weight: bold;
+
+      i {
+        font-style: normal;
+        color: $accent-yellow;
+      }
+    }
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item-wrap--right {
+    justify-content: flex-end;
+
+    .counter__item-img-circle{
+      transform: scale(-1, 1);
+      transition: .3s ease;
+    }
+
+    &:hover {
+      .counter__item-img-circle{
+        transform: scale(-1, 1);
+      }
+    }
+
+    &:hover {
+      .counter__item-img-circle::before{
+        transform: rotate(-360deg);
+      }
+    }
+  }
+
+  &__item-wrap:not(.counter__item-wrap--right){
+    &:hover {
+      .counter__item-img-circle{
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    max-width: 85%;
+
+    &-wrap {
+      width: 50%;
+      display: flex;
+    }
+
+    &-text {
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 18px;
+      font-family: $medium-font;
+    }
+
+    &--right {
+      justify-content: flex-end;
+    }
+
+    &-img {
+      width: 65px;
+      height: 65px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px;
+
+      &-circle {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        transition: transform 1s ease;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 90px;
+          height: 90px;
+          background-image: url('/img/icons/circle.svg');
+          background-repeat: no-repeat;
+          background-size: contain;
+          transition: transform 1s ease;
+        } 
+      }
+
+      .inner-text {
+        font-size: 28px;
+        font-family: $medium-font;
+
+        span {
+          position: absolute;
+          display: inline-block;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: 13px;
+          font-size: 14px;
+        }
+      }
+
+      img {
+        width: 50px
+      }
+
+      // &:hover {
+      //   .counter__item-img-circle {
+      //     transform: rotate(-360deg);
+      //   }
+      // }
+    }
+  }
+}

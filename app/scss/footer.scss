@@ -1,0 +1,94 @@
+@import "./shared/variables";
+
+.footer {
+
+  &-container {
+    display: flex;
+    width: 100%;
+  }
+
+  &__left {
+    width: 35%;
+    background: $gray;
+    padding: 55px;
+  }
+  &__right {
+    width: 65%;
+    background: $accent-blue;
+    padding: 55px;
+    display: flex;
+  }
+
+  &__logo {
+    width: 162px;
+    margin-bottom: 50px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 50%;
+      margin-bottom: 25px;
+
+      &--full {
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      a {
+        display: inline-block;
+        font-weight: bold;
+        text-decoration: none;
+        margin-bottom: 7px;
+      }
+
+      p {
+        color: #979a9c;
+        font-size: 13px;
+
+        &.adress {
+          font-size: 15px;
+          color: #fff;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  &__menu {
+    list-style-type: none;
+    width: 60%;
+
+    >li {
+      margin-bottom: 20px;
+      font-size: 17px;
+
+      >a {
+        font-family: $medium-font;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      >ul {
+        list-style-type: none;
+        padding-top: 20px;
+        >li {
+          margin-bottom: 18px;
+
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    &:first-child {
+      width: 40%;
+    }
+  }
+
+}

@@ -15,7 +15,9 @@
 
     &__item {
       margin-right: 30px;
-      
+      padding-left: 20px;
+      position: relative;
+
       &-link {
         display: inline-block;
         font-size: 14px;
@@ -29,8 +31,38 @@
         color: #252725;
       }
 
+      &:first-child {
+        .head-contacts__item-link {
+          &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -15px;
+            height: 16px;
+            width: 25px;
+            background: url('/img/icons/mail.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+
       &:last-child {
         margin-right: 0;
+
+        .head-contacts__item-link {
+          &::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: -10px;
+            height: 16px;
+            width: 25px;
+            background: url('/img/icons/phone.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+        }
       }
     }
   }
