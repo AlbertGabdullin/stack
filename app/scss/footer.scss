@@ -1,6 +1,7 @@
 @import "./shared/variables";
 
 .footer {
+  display: block;
   flex-wrap: wrap;
 
   &__bottom {
@@ -11,22 +12,55 @@
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
+    box-sizing: border-box;
 
     &-left {
       width: 50%;
       display: flex;
       justify-content: space-between;
+
+      @media(max-width: $screen-md) {
+        flex-direction: column;
+      }
+
+      @media(max-width: $screen-xs) {
+        width: 100%;
+        margin-bottom: 25px;
+      }
     }
 
     &-right {
       width: 50%;
       text-align: right;
+
+      @media(max-width: $screen-xs) {
+        width: 100%;
+        text-align: left;
+      }
+    }
+
+    @media(max-width: $screen-md) {
+      padding: 25px 40px;
+    }
+    @media(max-width: $screen-sm) {
+      padding: 25px 30px;
+    }
+    @media(max-width: $screen-xs) {
+      padding: 25px 20px;
+    }
+
+    @media(max-width: $screen-xs) {
+      flex-direction: column;
     }
   }
 
   .privacy-policy {
     text-decoration: none;
     font-weight: bold;
+
+    @media(max-width: $screen-md) {
+      margin-top: 10px;
+    }
   }
 
   .web-studio {
@@ -47,23 +81,64 @@
   &-container {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   &__left {
     width: 35%;
     background: $gray;
     padding: 55px;
+    box-sizing: border-box;
+
+    @media(max-width: $screen-lg) {
+      width: 100%;
+    }
+
+    @media(max-width: $screen-md) {
+      padding: 50px 40px;
+    }
+
+    @media(max-width: $screen-sm) {
+      padding: 50px 30px;
+    }
+
+    @media(max-width: $screen-xs) {
+      padding: 45px 20px;
+    }
   }
+
   &__right {
     width: 65%;
     background: $accent-blue;
     padding: 55px;
+    box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
+
+    @media(max-width: $screen-lg) {
+      width: 100%;
+    }
+
+    @media(max-width: $screen-md) {
+      padding: 50px 40px;
+    }
+
+    @media(max-width: $screen-sm) {
+      padding: 50px 30px;
+    }
+
+    @media(max-width: $screen-xs) {
+      padding: 45px 20px;
+    }
   }
 
   &__logo {
     width: 162px;
     margin-bottom: 50px;
+
+    @media(max-width: $screen-xs) {
+      margin-bottom: 35px;
+    }
   }
 
   &__contacts {
@@ -84,6 +159,10 @@
         font-weight: bold;
         text-decoration: none;
         margin-bottom: 7px;
+
+        @media(max-width: $screen-xs) {
+          font-size: 13px;
+        }
       }
 
       p {
@@ -105,7 +184,6 @@
 
     >li {
       margin-bottom: 20px;
-      font-size: 17px;
 
       >a {
         font-family: $medium-font;
@@ -130,6 +208,14 @@
 
     &:first-child {
       width: 40%;
+    }
+
+    @media(max-width: $screen-xs) {
+      width: 100%;
+
+      &:first-child {
+        width: 100%;
+      }
     }
   }
 

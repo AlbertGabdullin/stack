@@ -1,6 +1,7 @@
 @import "./shared/variables";
 
 .useful-articles {
+  display: block !important;
   padding-bottom: 60px;
 
   .owl-stage-outer {
@@ -68,10 +69,14 @@
     }
 
     &-wrap {
-      display: inline-block;
+      display: block;
       max-width: 312px;
       width: 100%;
       padding: 0 10px;
+      
+      @media(max-width: $screen-md) {
+        margin: 0 auto
+      }
     }
 
     &:hover {
@@ -79,6 +84,23 @@
       box-shadow: 0 15px 15px 7px rgba(0, 0, 0, .05);
     }
   }
+  @media(max-width: $screen-sm) {
+    .owl-dots {
+      text-align: center;
+      margin-top: 35px;
 
+      .owl-dot {
+        width: 9px;
+        height: 9px;
+        background: #b6c6d9;;
+        border-radius: 50%;
+        margin: 0 10px;
+
+        &.active {
+          background: $accent-yellow;
+        }
+      }
+    }
+  }
   
 }

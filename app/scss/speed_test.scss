@@ -1,6 +1,7 @@
 @import "./shared/variables";
 
 .speed-test {
+  display: block !important;
   position: relative;
   padding-top: 140px;
   padding-bottom: 90px;
@@ -9,28 +10,81 @@
     position: absolute;
     top: 90px;
     color: $accent-yellow;
+
+    @media(max-width: $screen-md) {
+      position: static;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+  }
+
+  &-form {
+    width: 70%;
+
+    .button {
+      float: right;
+    }
+
+    @media(max-width: $screen-md) {
+      margin: 0 auto;
+    }
+    @media(max-width: $screen-xs) {
+      width: 100%;
+      text-align: center;
+
+      .button {
+        display: inline-block;
+        float: none;
+        margin: 0 auto;
+      }
+    }
   }
 
 
   h2 {
     display: inline-block;
     width: 30%;
+    
+
+    @media(max-width: $screen-md) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
   }
 
   &-wrap {
     display: flex;
     justify-content: space-between;
-  }
-
-  &__form {
-    .button {
-      float: right;
-    }
+    flex-wrap: wrap;
   }
 
   &__input-wrap {
     display: flex;
     margin-bottom: 20px;
+    justify-content: flex-end;
+
+    @media(max-width: $screen-xs) {
+      flex-wrap: wrap;
+      margin-bottom: 0;
+      
+      .input {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  @media(max-width: $screen-md) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  @media(max-width: $screen-xs) {
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
 }
 

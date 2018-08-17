@@ -1,6 +1,7 @@
 @import "./shared/variables";
 
 .main {
+  display: block !important;
   background-color: $gray-light;
   padding-top: 115px;
   padding-bottom: 90px;
@@ -11,6 +12,20 @@
   &-content {
     max-width: 500px;
     margin-bottom: 110px;
+
+    @media(max-width: $screen-md) {
+      margin-bottom: 60px;
+      max-width: 400px;
+    }
+
+    @media(max-width: $screen-sm) {
+      margin-bottom: 60px;
+      max-width: 350px;
+    }
+
+    @media(max-width: $screen-xs) {
+      max-width: 100%;
+    }
   }
 
   &-description {
@@ -24,6 +39,40 @@
     justify-content: stretch;
     flex-wrap: wrap;
     flex: 1;
+    
+
+    .owl-dots {
+      text-align: center;
+      margin-top: 35px;
+
+      .owl-dot {
+        width: 9px;
+        height: 9px;
+        background: #b6c6d9;;
+        border-radius: 50%;
+        margin: 0 10px;
+
+        &.active {
+          background: $accent-yellow;
+        }
+      }
+    }
+  }
+
+  @media(max-width: $screen-lg) {
+    background-position: 120% 10%;
+    background-size: 50%;
+  }
+
+  @media(max-width: $screen-md) {
+    background-position: 120% 10%;
+    background-size: 40%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  @media(max-width: $screen-xs) {
+    background-image: none;
   }
 }
 
@@ -79,11 +128,19 @@ h1 {
       }
     }
 
+    @media(max-width: $screen-md) {
+      width: 100%;
+    }
+
   }
 
   &-head {
     position: relative;
     margin-bottom: 30px;
+
+    @media(max-width: $screen-md) {
+      margin-bottom: 25px;
+    }
   }
 
   &-type {
@@ -91,6 +148,10 @@ h1 {
     font-family: $medium-font;
     color: $accent-yellow;
     margin-bottom: 20px;
+
+    @media(max-width: $screen-xs) {
+      margin-bottom: 15px;
+    }
   }
 
   &-name {
@@ -107,20 +168,49 @@ h1 {
     img {
       width: 100%;
     }
+
+    @media(max-width: $screen-xs) {
+      position: static;
+      transform: none;
+      margin-bottom: 15px;
+    }
   }
 
   &-description {
     font-size: 14px;
     margin-bottom: 35px;
+
+    @media(max-width: $screen-xs) {
+      margin-bottom: 20px;
+    }
   }
 
   &-advantages {
     margin-bottom: 100px;
+    
+    @media(max-width: $screen-xs) {
+      .list {
+        display: none;
+        padding-top: 20px;
+      }
+      .show-advantages {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    @media(max-width: $screen-md) {
+      margin-bottom: 55px;
+    }
   }
 
   &-footer {
     display: flex;
     justify-content: space-between;
+
+    @media(max-width: $screen-xs) {
+      display: block;
+    }
   }
 
   &-price {
@@ -140,6 +230,18 @@ h1 {
       font-size: 11px;
       color: #7f8387;
     }
+
+    @media(max-width: $screen-xs) {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media(max-width: $screen-md) {
+    margin: 0;
+  }
+
+  @media(max-width: $screen-xs) {
+    padding: 25px;
   }
 }
 
@@ -163,4 +265,8 @@ h1 {
       background-size: contain;
     }
   }
+}
+
+.show-advantages {
+  display: none;
 }

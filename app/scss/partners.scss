@@ -1,21 +1,53 @@
 @import "./shared/variables";
 
 .partners {
+  display: block !important;
   padding: 60px 0 120px;
+
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    @media(max-width: $screen-md) {
+      justify-content: center;
+    }
   }
 
   &__item {
     width: calc(100% / 7);
     text-align: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
 
     img {
-      padding-left: 10px;
-      padding-right: 10px;
+      max-width: 100%;
+    }
+
+    @media(max-width: $screen-md) {
+      width: calc(100% / 4);
+      margin-bottom: 25px;
+    }
+
+    @media(max-width: $screen-xs) {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(6),
+      &:nth-child(7), {
+        width: 50%;
+      }
+
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        width: calc(100% / 3);
+      } 
+
     }
   }
 }

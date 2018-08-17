@@ -15,6 +15,13 @@
 	color: #fff;
 }
 
+html, body {
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	width: 100%;
+}
+
 body {
 	font-size: 15px;
 	min-width: 320px;
@@ -23,7 +30,6 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: #252627;
-	margin: 0;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -83,6 +89,12 @@ b, strong {
 
 .hidden {
 	display: none;
+}
+
+.border-buttons {
+	@media(max-width: $screen-md) {
+		display: none;
+	}
 }
 
 .language-buttons {
