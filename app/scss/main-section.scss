@@ -248,6 +248,15 @@ h1 {
 .list {
   list-style-type: none;
 
+  &--bold {
+    li {
+      
+      &::before {
+        background-image: url("/img/icons/checked-bold.svg") !important;
+      }
+    }
+  }
+
   li {
     position: relative;
     padding-left: 25px;

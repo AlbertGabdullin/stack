@@ -23,6 +23,15 @@ $(function () {
 	$('.menu-btn').on('click', function (e) {
 		e.preventDefault();
 		$(this).toggleClass('menu-btn--active');
+
+		if($(this).hasClass('menu-btn--active')){
+			$('.mobile-navigation').slideDown();
+			$(this).children('p').html('Закрыть');
+		}
+		else {
+			$('.mobile-navigation').slideUp();
+			$(this).children('p').html('Навигация');
+		}
 	});
 
 	//SVG Fallback
@@ -73,6 +82,35 @@ $(function () {
 	$('.show-advantages').on('click', function() {
 		$(this).siblings('.list').slideDown(300);
 	});
+
+	$('.menu-child li a').hover(function(){
+		$('.menu-child li a').removeClass('active');
+		$(this).addClass('active');
+	});
+
+	$('.licenze-items').owlCarousel({
+		items: 2,
+		nav: true
+	});
+
+	$('.prices-wrap').owlCarousel({
+		items: 2.5,
+		nav: true,
+		loop: true,
+	});
+
+	// let openMenuFlag = false;
+
+	// $('.menu__item-link').hover(function() {
+	// 	if(openMenuFlag === false) {
+	// 		$(this).siblings('ul').slideDown();
+	// 		openMenuFlag = true;
+	// 	}
+	// 	else {
+	// 		$(this).siblings('ul').slideUp();
+	// 		openMenuFlag = false;
+	// 	}
+	// })
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail

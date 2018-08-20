@@ -1,0 +1,53 @@
+.team {
+  padding-bottom: 80px;
+
+  .container {
+    width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 25%;
+    margin: 10px;
+
+    &-photo {
+      height: 315px;
+      min-width: 235px;
+      background-size: cover;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      margin-bottom: 25px;
+    }
+
+    &-name {
+      font-size: 21px;
+      font-family: $medium-font;
+      margin-bottom: 10px;
+    }
+
+    &-position {
+      font-size: 12px;
+      margin-bottom: 27px;
+    }
+
+    &-description {
+      font-size: 13px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

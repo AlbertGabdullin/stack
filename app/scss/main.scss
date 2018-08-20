@@ -42,6 +42,10 @@ body {
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+
 .img-responsive {
 	display: block;
 	max-width: 100%;
@@ -57,6 +61,28 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 	color: #2e3033;
+
+	&--reverse {
+		&::after {
+			display: none !important;
+		}
+
+		&::before {
+			content: '';
+			display: inline-block;
+			position: relative;
+			padding-left: 10px;
+			left: -10px;
+			vertical-align: middle;
+			width: 13px;
+			height: 14px;
+			background-image: url("/img/right-arrow.svg");
+			background-size: contain;
+			background-repeat: no-repeat;
+			transition: .3s ease;
+			transform: scale(-1, 1);
+		}
+	}
 
 	&::after {
 		content: '';
@@ -108,8 +134,8 @@ b, strong {
 	a {
 		margin-bottom: 10px;
 		display: flex;
-		width: 20px;
-		height: 20px;
+		width: 30px;
+		height: 30px;
 		justify-content: center;
 		align-items: center;
 		text-decoration: none;
@@ -192,6 +218,15 @@ b, strong {
 	}
 }
 
+.logo-intext {
+	font-weight: bold;
+
+	i {
+		font-style: normal;
+		color: $accent-yellow;
+	}
+}
+
 
 
 @import "./header";
@@ -203,3 +238,9 @@ b, strong {
 @import "./useful-articles";
 @import "./partners";
 @import "./footer";
+@import "./page";
+@import "./about-us";
+@import "./link-block";
+@import "./our-advantages";
+@import "./team";
+@import "./price";

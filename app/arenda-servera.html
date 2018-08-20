@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+
+  <title>Stack24</title>
+  <meta name="description" content="">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="icon" href="img/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <div class="wrap">
+        <div class="container">
+          <a href="/stack/" class="logo">
+            <img src="img/logo.svg" alt="Stack24">
+          </a>
+
+          <div class="head-contacts">
+            <div class="head-contacts__item">
+              <a href="#" class="head-contacts__item-link">support@stack24.com</a>
+              <div class="head-contacts__item-text">Техподдержка</div>
+            </div>
+            <div class="head-contacts__item">
+              <a href="#" class="head-contacts__item-link">sales@stack24.com</a>
+              <div class="head-contacts__item-text">Центр продаж</div>
+            </div>
+            <div class="head-contacts__item">
+              <a href="#" class="head-contacts__item-link">+7 (843) 249 49 44</a>
+              <div class="head-contacts__item-text">Центр продаж</div>
+            </div>
+          </div>
+          <a href="#" class="menu-btn">
+            <p>Навигация</p>
+            <span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="wrap">
+      <ul class="menu">
+        <li class="menu__item">
+          <a href="/#" class="menu__item-link">Облачные решения</a>
+        </li>
+        <li class="menu__item">
+          <a href="/#" class="menu__item-link">Аренда серверов</a>
+        </li>
+        <li class="menu__item menu__item--parent">
+          <a href="/#" class="menu__item-link">Размещение серверов</a>
+          <ul class="menu-child">
+            <li>
+              <a href="">Аренда юнит-места</a>
+            </li>
+            <li>
+              <a class="active" href="">Аренда стойко-места</a>
+            </li>
+            <li>
+              <a href="">Аренда серверной ячейки</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__item">
+          <a href="/#" class="menu__item-link">Дополнительные услуги</a>
+        </li>
+        <li class="menu__item">
+          <a href="/#" class="menu__item-link">О компании</a>
+        </li>
+        <li class="menu__item">
+          <a href="/#" class="menu__item-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-navigation">
+      <div class="container">
+        <div class="top-buttons">
+          <div class="language-buttons">
+            <a class="active" href="#">Ru</a>
+            <a href="#">En</a>
+          </div>
+
+          <div class="center-buttons">
+            <div class="center-buttons__item">
+              <a href=""></a>
+              <span>Обратный звонок</span>
+            </div>
+            <div class="center-buttons__item">
+              <a href=""></a>
+              <span>Поддержка клиентов</span>
+            </div>
+            <div class="center-buttons__item">
+              <a href=""></a>
+              <span>Тест скорости</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="head-contacts">
+          <div class="head-contacts__item">
+            <a href="#" class="head-contacts__item-link">support@stack24.com</a>
+            <div class="head-contacts__item-text">Техподдержка</div>
+          </div>
+          <div class="head-contacts__item">
+            <a href="#" class="head-contacts__item-link">sales@stack24.com</a>
+            <div class="head-contacts__item-text">Центр продаж</div>
+          </div>
+          <div class="head-contacts__item">
+            <a href="#" class="head-contacts__item-link">+7 (843) 249 49 44</a>
+            <div class="head-contacts__item-text">Центр продаж</div>
+          </div>
+        </div>
+
+        <div class="mobile__search">
+          <input type="text" class="mobile__search-input" placeholder="Поиск по сайту">
+          <div class="mobile__search-button"></div>
+        </div>
+
+        <nav class="mobile-nav">
+          <ul>
+            <li>
+              <a href="">Облачные решения</a>
+            </li>
+            <li>
+              <a href="">Аренда сервера</a>
+            </li>
+            <li>
+              <a href="">Размещение серверов</a>
+              <ul>
+                <li>
+                  <a href="">Аренда юнит-места</a>
+                </li>
+                <li>
+                  <a href="">Аренда стойко-места</a>
+                </li>
+                <li>
+                  <a href="">Аренда серверной ячейки</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">О компании</a>
+              <ul>
+                <li>
+                  <a href="">Документы</a>
+                </li>
+                <li>
+                  <a href="">Полезные статьи</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Дополнительные услуги</a>
+              <ul>
+                <li>
+                  <a href="">Аренда изолированного частного блока</a>
+                </li>
+                <li>
+                  <a href="">Телекоммуникационные услуги</a>
+                </li>
+                <li>
+                  <a href="">Администрирование</a>
+                </li>
+                <li>
+                  <a href="">Резервное копирование</a>
+                </li>
+                <li>
+                  <a href="">Аренда ПО Microsoft</a>
+                </li>
+                <li>
+                  <a href="">Облачные решения SAP HANA</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <section class="page-head wrap" style="background-image: url('/img/arenda.png');">
+    <div class="container">
+      <div class="breadcrumbs">
+        <p>Главная</p>
+        <a href="" class="current-page">Аренда серверов</a>
+      </div>
+      <h1>Аренда выделенного сервера</h1>
+    </div>
+  </section>
+
+  <section class="page-content wrap">
+    <div class="container">
+      <div class="page-content__left">
+        <img src="img/arenda-image.png" alt="">
+      </div>
+      <div class="page-content__right">
+        <p>Услуга аренды выделенного физического сервера в STACK 24 – это удобное и недорогое решение для бизнеса. Дата Центр
+          STACK 24 предлагает как стандартные решения на базе процессора Intel Xeon E3-1230v3, так и высокопроизводительные
+          платформы на базе процессоров Intel Xeon E5 и E7. Коммутационное оборудование для серверов - Juniper. Также мы
+          предоставляем доступ на IPMI серверов, общий безлимитный интернет канал с предельной полосой пропускания 100 Mb/s,
+          1 IPv4 адрес и круглосуточную техническую поддержку. Вы можете бесплатно протестировать нашу услугу в течении 7
+          дней!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="price-section wrap">
+    <div class="container">
+      <h2>Цены и услуги</h2>
+      <div class="prices-wrap owl-carousel">
+        <div class="price__item">
+          <div class="price__item-content">
+            <div class="price__item-head">Решения для малого бизнеса</div>
+            <div class="price__item-char">
+              <table>
+                <tr>
+                  <td>Процессор CPU:</td>
+                  <td>Intel Xeon E3 v3/v5</td>
+                </tr>
+                <tr>
+                  <td>Количество ядер:</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>RAM:</td>
+                  <td>до 64 Gb</td>
+                </tr>
+                <tr>
+                  <td>Доступ к интернету:</td>
+                  <td>100 Mb/s</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__item-list">
+              <ul class="list">
+                <li>Техподдержка 24/7</li>
+                <li>Консоль управления</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="price__item-footer">
+            <div class="price__item-footer-price">
+              <p>От
+                <span class="yellow">990 Р</span>
+                <span>/</span>
+                <sup>мес.</sup>
+              </p>
+              <p class="main__service-price-nds">Цена с учетом НДС</p>
+            </div>
+            <a href="#" class="price__item-footer-button button">Заказать</div>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-content">
+            <div class="price__item-head">Решения для малого бизнеса</div>
+            <div class="price__item-char">
+              <table>
+                <tr>
+                  <td>Процессор CPU:</td>
+                  <td>Intel Xeon E3 v3/v5</td>
+                </tr>
+                <tr>
+                  <td>Количество ядер:</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>RAM:</td>
+                  <td>до 64 Gb</td>
+                </tr>
+                <tr>
+                  <td>Доступ к интернету:</td>
+                  <td>100 Mb/s</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__item-list">
+              <ul class="list">
+                <li>Техподдержка 24/7</li>
+                <li>Консоль управления</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="price__item-footer">
+            <div class="price__item-footer-price"></div>
+            <div class="price__item-footer-button"></div>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-content">
+            <div class="price__item-head">Решения для малого бизнеса</div>
+            <div class="price__item-char">
+              <table>
+                <tr>
+                  <td>Процессор CPU:</td>
+                  <td>Intel Xeon E3 v3/v5</td>
+                </tr>
+                <tr>
+                  <td>Количество ядер:</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>RAM:</td>
+                  <td>до 64 Gb</td>
+                </tr>
+                <tr>
+                  <td>Доступ к интернету:</td>
+                  <td>100 Mb/s</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__item-list">
+              <ul class="list">
+                <li>Техподдержка 24/7</li>
+                <li>Консоль управления</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="price__item-footer">
+            <div class="price__item-footer-price"></div>
+            <div class="price__item-footer-button"></div>
+          </div>
+        </div>
+
+        <div class="price__item">
+          <div class="price__item-content">
+            <div class="price__item-head">Решения для малого бизнеса</div>
+            <div class="price__item-char">
+              <table>
+                <tr>
+                  <td>Процессор CPU:</td>
+                  <td>Intel Xeon E3 v3/v5</td>
+                </tr>
+                <tr>
+                  <td>Количество ядер:</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>RAM:</td>
+                  <td>до 64 Gb</td>
+                </tr>
+                <tr>
+                  <td>Доступ к интернету:</td>
+                  <td>100 Mb/s</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price__item-list">
+              <ul class="list">
+                <li>Техподдержка 24/7</li>
+                <li>Консоль управления</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="price__item-footer">
+            <div class="price__item-footer-price"></div>
+            <div class="price__item-footer-button"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="counter wrap">
+    <div class="container">
+      <h2>
+        <span>STACK
+          <i>24</i>
+        </span> в цифрах</h2>
+
+      <div class="counter-items">
+
+        <div class="counter__item-wrap">
+          <div class="counter__item ">
+            <div class="counter__item-img">
+              <div class="counter__item-img-circle"></div>
+              <div class="counter__item-img-icon" style="background-image: url('img/01.png')"></div>
+            </div>
+            <div class="counter__item-text">Соответствует требованиям Uptime TIER III</div>
+          </div>
+        </div>
+
+        <div class="counter__item-wrap counter__item-wrap--right">
+          <div class="counter__item">
+            <div class="counter__item-img">
+              <div class="counter__item-img-circle"></div>
+              <div class="inner-text">6</div>
+            </div>
+            <div class="counter__item-text">Лет компаниясуществует на рынке</div>
+          </div>
+        </div>
+
+        <div class="counter__item-wrap counter__item-wrap--right">
+          <div class="counter__item">
+            <div class="counter__item-img">
+              <div class="counter__item-img-circle"></div>
+              <div class="counter__item-img-icon" style="background-image: url('img/02.png')"></div>
+            </div>
+            <div class="counter__item-text">Аттестован согласно требованиям PCI DSS</div>
+          </div>
+        </div>
+
+        <div class="counter__item-wrap">
+          <div class="counter__item">
+            <div class="counter__item-img">
+              <div class="counter__item-img-circle"></div>
+              <div class="inner-text">376</div>
+            </div>
+            <div class="counter__item-text">Стоек в нашем дата центре</div>
+          </div>
+        </div>
+
+        <div class="counter__item-wrap">
+          <div class="counter__item">
+            <div class="counter__item-img">
+              <div class="counter__item-img-circle"></div>
+              <div class="counter__item-img-icon" style="background-image: url('img/03.png')"></div>
+            </div>
+            <div class="counter__item-text">Облачная и физическая инфраструктура, соответствующая ФЗ-152</div>
+          </div>
+        </div>
+
+        <div class="counter__item-wrap counter__item-wrap--right">
+          <div class="counter__item">
+            <div class="counter__item-img">
+              <div class="counter__item-img-circle"></div>
+              <div class="inner-text">2,5
+                <span>МВт</span>
+              </div>
+            </div>
+            <div class="counter__item-text">Установленная мощность дата-центра STACK 24</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section wrap wrap--gray">
+    <div class="container container--white">
+      <div class="video-section__left">
+        <h2>Видео экскурсия
+          <br>по&nbsp;дата-центру
+          <span>STACK
+            <i>24</i>
+          </span>
+        </h2>
+        <a href="#" class="read-more">Подробнее о компании</a>
+      </div>
+      <div class="video-section__right">
+        <a href="#" class="video-section__link">
+          <img src="img/video.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="team wrap wrap--gray">
+    <div class="container container--nopadd">
+      <h2>Наша команда</h2>
+      <div class="team__items">
+        <div class="team__item">
+          <div class="team__item-photo" style="background-image: url('img/team/1.jpg');"></div>
+          <div class="team__item-name">Алсу Рахматуллина</div>
+          <div class="team__item-position">Генеральный директор дата-центра STACK 24</div>
+          <div class="team__item-description"></div>
+        </div>
+
+        <div class="team__item">
+          <div class="team__item-photo" style="background-image: url('img/team/2.jpg');"></div>
+          <div class="team__item-name">Георгий Васильев</div>
+          <div class="team__item-position">Финансовый директор</div>
+          <div class="team__item-description">Курирует направления, связанныес финансовым обеспечением проекта и бухгалтерией Дата Центра STACK 24</div>
+        </div>
+
+        <div class="team__item">
+          <div class="team__item-photo" style="background-image: url('img/team/3.jpg');"></div>
+          <div class="team__item-name">Ильназ Хузяхметов</div>
+          <div class="team__item-position">Коммерческий директор</div>
+          <div class="team__item-description">Курирует коммерческий и ИТ блок Дата Центра STACK 24</div>
+        </div>
+
+        <div class="team__item">
+          <div class="team__item-photo" style="background-image: url('img/team/4.jpg');"></div>
+          <div class="team__item-name">Рамиль Ахметов</div>
+          <div class="team__item-position">Технический директор</div>
+          <div class="team__item-description">Курирует технический блок Дата Центра</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="link-block wrap">
+    <div class="container">
+      <div class="link-block__items">
+        <div class="link-block__item">
+          <div class="link-block__item-icon">
+            <img src="img/icons/cloud.svg" alt="">
+          </div>
+          <div class="link-block__item-head">Вернуться на главную</div>
+          <a href="" class="link-block__item-link read-more read-more--reverse">Назад</a>
+        </div>
+        <div class="link-block__item">
+          <div class="link-block__item-icon">
+            <img src="img/icons/cloud.svg" alt="">
+          </div>
+          <div class="link-block__item-head">Документы</div>
+          <a href="" class="link-block__item-link read-more">Подробнее</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="partners wrap wrap--gray">
+    <div class="container">
+
+      <div class="partners__item">
+        <img src="img/partners/cisco.png" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="img/partners/netapp.png" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="img/partners/juniper.png" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="img/partners/sap.png" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="img/partners/microsoft.png" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="img/partners/huawei.png" alt="">
+      </div>
+      <div class="partners__item">
+        <img src="img/partners/vmware.png" alt="">
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer wrap">
+    <div class="footer-container">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="img/logo.svg" alt="">
+        </div>
+
+        <div class="footer__contacts">
+          <div class="footer__contacts-item">
+            <a href="tel:+7 (843) 249 49 44">+7 (843) 249 49 44</a>
+            <p>Центр продаж</p>
+          </div>
+
+          <div class="footer__contacts-item">
+            <a href="tel:+7 (843) 249 49 44">+7 (843) 249 49 44</a>
+            <p>Техподдержка</p>
+          </div>
+
+          <div class="footer__contacts-item">
+            <a href="mailto:sales@stack24.com">sales@stack24.com</a>
+            <p>Центр продаж</p>
+          </div>
+
+          <div class="footer__contacts-item">
+            <a href="mailto:support@stack24.com">support@stack24.com</a>
+            <p>Техподдержка</p>
+          </div>
+
+          <div class="footer__contacts-item footer__contacts-item--full">
+            <p class="adress">Казань, ул. Оренбургский тракт д. 5д</p>
+            <p>Работаем круглосуточно 24 / 7 / 365</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="footer__right">
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Облачные решения</a>
+          </li>
+          <li>
+            <a href="#">Аренда сервера</a>
+          </li>
+          <li>
+            <a href="#">Размещение серверов</a>
+            <ul>
+              <li>
+                <a href="#">Аренда юнит-места</a>
+              </li>
+              <li>
+                <a href="#">Аренда стойко-места</a>
+              </li>
+              <li>
+                <a href="#">Аренда серверной ячейки</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">О компании</a>
+            <ul>
+              <li>
+                <a href="#">Документы</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul class="footer__menu">
+          <li>
+            <a href="#">Дополнительные услуги</a>
+            <ul>
+              <li>
+                <a href="#">Аренда изолированного частного облака</a>
+              </li>
+              <li>
+                <a href="#">Телекоммуникационные услуги</a>
+              </li>
+              <li>
+                <a href="#">Администрирование</a>
+              </li>
+              <li>
+                <a href="#">Резервное копирование</a>
+              </li>
+              <li>
+                <a href="#">Администрирование</a>
+              </li>
+
+              <li>
+                <a href="#">Аренда ПО Microsoft</a>
+              </li>
+
+              <li>
+                <a href="#">Облачные решения SAP NANA</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Блок</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <p class="copiryght">© 2018 STACK 24. Все права защищены</p>
+        <a href="#" class="privacy-policy">Политики конфеденциальности</a>
+      </div>
+      <div class="footer__bottom-right">
+        <div class="web-studio">Сайт разработан в студии
+          <a href="">
+            <span>29</span>.agency</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="border-buttons">
+
+    <div class="language-buttons">
+      <a class="active" href="#">Ru</a>
+      <a href="#">En</a>
+    </div>
+
+    <div class="ip-button">
+      <a href="#"></a>
+    </div>
+
+    <div class="border-contacts">
+      <a href="" class="border-phone"></a>
+      <a href="" class="border-mail"></a>
+    </div>
+
+    <div class="search-button">
+      <a href="#"></a>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
