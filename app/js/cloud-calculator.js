@@ -17,8 +17,6 @@
 
     if (result !== resultSumm) {
       $('.c-cloud-calculator .info-summ-result .number').text(result);
-
-      console.log(fields);
       resultSumm = result;
     }
   }
