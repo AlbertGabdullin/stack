@@ -30,6 +30,7 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: #252627;
+	-webkit-font-smoothing: antialiased;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -228,6 +229,10 @@ b, strong {
 }
 
 
+.flex {
+	display: flex;
+}
+
 
 @import "./header";
 @import "./main-section";
@@ -244,3 +249,4 @@ b, strong {
 @import "./our-advantages";
 @import "./team";
 @import "./price";
+@import "./dop-uslugi";
