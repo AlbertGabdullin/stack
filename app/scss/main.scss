@@ -1,6 +1,7 @@
 @import "./shared/libs";
 @import "./shared/containers";
 @import "./shared/variables";
+@import "./shared/utilities";
 @import "./shared/fonts";
 @import "./shared/typography";
 @import "./shared/buttons";
@@ -246,3 +247,4 @@ b, strong {
 @import "./price";
 
 @import "./cloud-solutions";
+@import "./cloud-calculator"

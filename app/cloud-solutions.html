@@ -241,11 +241,123 @@
           Дата Центр STACK 24 предоставляет услугу по аренде вычислительных ресурсов (IAAS). Облачные решения STACK 24 это отказоустойчивая платформа для размещения IT инфраструктуры Клиента без необходимости в покупке собственных серверов, сетевых устройств, систем хранения данных, специализированного программного обеспечения. Наши Клиенты размещают у нас критичные данные и приложения, базы данных ORACLE, SAP, SQL, основные и резервные площадки , то есть все то, для чего требуется максимальная отказоустойчивость и доступность на уровне 99,9%. 
           Пользуясь нашими услугами Вы получаете в свое распоряжение готовые и отвечающие высоким требованиям доступности вычислительные ресурсы с управлением через панель vCloud Director.
         </p>
-        <h2>Архитектура облачнойплатформы STACK 24</h2>
+        <h2>Архитектура облачной платформы STACK 24</h2>
         <p>
           Облачная инфраструктура Дата Центра STACK 24 построена исключительно на качественных и проверенных решениях производителей сетевого и серверного оборудования CISCO, Huawei, NetApp, размещенных в Дата Центре уровня TIER III.
           Серверная инфраструктура облачной платформы построена на основе блейд шасси и блейд серверов CISCO и Huawei на базе процессоров INTEL XEON E5 2690v4. Системы хранения данных для облачной платформы реализованы на решениях NetApp FAS и AllFlash. Система виртуализации - VMware vCloud.
         </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content wrap">
+    <div class="container">
+      <div class="c-cloud-calculator">
+        <div class="calculator-info">
+          <h2>Соберите свою конфигурацию</h2>
+          <div class="calculator-info-summ">
+            <h3>
+              <span class="info-summ-result"> <span class="number">3600</span> P</span> / <span class="u-va-top info-summ-currency u-text-small">мес</span>
+            </h3>
+            <div class="u-text-muted u-text-small">С учетом НДС</div>
+          </div>
+          <div>
+            <button class="button calculator-button">Заказать</button>
+          </div>
+        </div>
+        <div class="calculator-configs">
+
+          <div class="configs-line configs-line-vcpu">
+            <div class="configs-line-name">
+              vCPU
+            </div>
+            <div class="configs-line-slider">
+              <input type="range" class="cloud-calculator-slider" value="2"  min="1" max="4">
+            </div>
+            <div class="configs-line-value">
+              2
+            </div>
+            <div class="configs-line-currency">
+              x 1.0
+            </div>
+          </div>
+
+          <div class="configs-line configs-line-vram">
+            <div class="configs-line-name">
+              vRam
+            </div>
+            <div class="configs-line-slider">
+              <input type="range" class="cloud-calculator-slider" value="8" min="1" max="16">
+            </div>
+            <div class="configs-line-value">
+              2
+            </div>
+            <div class="configs-line-currency">
+              Gb
+            </div>
+          </div>
+
+          <div class="configs-line configs-line-vsas">
+            <div class="configs-line-name">
+              vSas
+            </div>
+            <div class="configs-line-slider">
+              <input type="range" class="cloud-calculator-slider" value="16" min="1" max="64">
+            </div>
+            <div class="configs-line-value">
+              2
+            </div>
+            <div class="configs-line-currency">
+              Gb
+            </div>
+          </div>
+
+          <div class="configs-line configs-line-vsata">
+            <div class="configs-line-name">
+              vSata
+            </div>
+            <div class="configs-line-slider">
+              <input type="range" class="cloud-calculator-slider" value="244" min="1" max="256">
+            </div>
+            <div class="configs-line-value">
+              2
+            </div>
+            <div class="configs-line-currency">
+              Gb
+            </div>
+          </div>
+
+          <div class="configs-line configs-line-internet">
+            <div class="configs-line-name">
+              Internet
+            </div>
+            <div class="configs-line-slider">
+              <input type="range" class="cloud-calculator-slider" value="100" min="1" max="500">
+            </div>
+            <div class="configs-line-value">
+              2
+            </div>
+            <div class="configs-line-currency">
+              Mb/s
+            </div>
+          </div>
+
+          <div class="configs-line configs-line-ipv4">
+            <div class="configs-line-name">
+              iPv4
+            </div>
+            <div class="configs-line-slider">
+              <input type="range" class="cloud-calculator-slider" value="4" min="1" max="40">
+            </div>
+            <div class="configs-line-value">
+              2
+            </div>
+            <div class="configs-line-currency">
+              Шт
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -397,6 +509,7 @@
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/common.js"></script>
+	<script src="js/cloud-calculator.js"></script>
 </body>
 
 </html>
