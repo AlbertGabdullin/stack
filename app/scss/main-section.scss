@@ -248,15 +248,6 @@ h1 {
 .list {
   list-style-type: none;
 
-  &--bold {
-    li {
-      
-      &::before {
-        background-image: url("/img/icons/checked-bold.svg") !important;
-      }
-    }
-  }
-
   li {
     position: relative;
     padding-left: 25px;
@@ -268,12 +259,40 @@ h1 {
       width: 25px;
       height: 15px;
       left: 0;
-      top: 3px;
+      top: 50%;
+      transform: translateY(-50%);
       background-image: url("/img/icons/checked.svg");
       background-repeat: no-repeat;
       background-size: contain;
     }
   }
+
+  &--bold {
+    li {
+
+      &::before {
+        background-image: url("/img/icons/checked-bold.svg") !important;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        transform: none;
+      }
+    }
+  }
+
+  &--plus {
+    li {
+      padding-left: 50px;
+      font-size: 16px;
+
+      &::before {
+        background-image: url("/img/icons/plus.svg") !important;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
 }
 
 .show-advantages {

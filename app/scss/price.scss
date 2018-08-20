@@ -36,11 +36,13 @@
 }
 
 .price__item {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 40px;
   margin-right: 20px;
   background: #fff;
-  max-width: 680px;
+  max-width: 685px;
 
   &-head {
     font-size: 24px;
@@ -59,7 +61,7 @@
           &:first-child {
             font-family: $default-font;
             font-size: 12px;
-            padding-right: 20px;
+            padding-right: 10px;
             color: #88898b;
           }
         }
@@ -72,6 +74,10 @@
   }
 
   &-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     &-price {
       font-size: 16px;
       font-family: $medium-font;
@@ -92,6 +98,13 @@
   
       @media(max-width: $screen-xs) {
         margin-bottom: 25px;
+      }
+    }
+
+    &-button {
+      .button {
+        padding-right: 30px;
+        padding-left: 30px;
       }
     }
   }
