@@ -96,6 +96,7 @@ $(function () {
 	$('.prices-wrap').owlCarousel({
 		items: 2.5,
 		nav: true,
+		loop: true,
 	});
 
 	$('.price__item').itemheight();
