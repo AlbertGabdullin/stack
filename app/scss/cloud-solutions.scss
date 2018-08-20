@@ -4,23 +4,22 @@
     background-position-y: center;
   }
 
+  .container {
+    width: 100%;
+  }
+
   .page-content {
+    .page-content__left {
+      padding: 0;
+      background: transparent;
+    }
+  
+    .page-content__right {
+      padding-left: 60px;
 
-    .container {
-      align-items: flex-start;
-      
-      .page-content__left {
-        padding: 0;
-        background: transparent;
-      }
-    
-      .page-content__right {
-        padding-left: 60px;
-
-        h2 {
-          margin-top: 40px;
-          margin-bottom: 35px;
-        }
+      h2 {
+        margin-top: 40px;
+        margin-bottom: 35px;
       }
     }
 
@@ -32,6 +31,30 @@
         align-self: center;
       }
     }
+  }
 
+  .cloud-advantages {
+    padding: 70px 0;
+
+    h2 {
+      margin-bottom: 60px;
+    }
+
+    .cloud-advantages-content {
+      display: flex;
+      justify-content: space-between;
+
+      .cloud-advantages-list {
+        padding-left: 25px;
+        width: 280px;
+        margin: 0;
+        list-style-image: url('../img/icons/checked-blue.svg');
+        
+        .cloud-advantages-item {
+          padding-left: 10px;
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 }
