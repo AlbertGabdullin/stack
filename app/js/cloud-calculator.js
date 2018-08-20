@@ -10,13 +10,15 @@
   };
   var resultSumm = 0
 
-  function setResultSumm(fields) {
-    fields = Object.assign({}, fields, fields);
+  function setResultSumm(changes) {
+    fields = Object.assign({}, fields, changes);
     var result = (Number(fields.vcpu) * Number(fields.vram) * Number(fields.vsas) + 
                   Number(fields.vsata) + Number(fields.internet) * Number(fields.ipv4));
 
     if (result !== resultSumm) {
       $('.c-cloud-calculator .info-summ-result .number').text(result);
+
+      console.log(fields);
       resultSumm = result;
     }
   }
