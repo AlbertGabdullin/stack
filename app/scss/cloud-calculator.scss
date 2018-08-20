@@ -1,0 +1,121 @@
+.c-cloud-calculator {
+  width: 100%;
+  padding: 75px 60px;
+  background: $white;
+  display: flex;
+  align-items: top;
+
+  .calculator-info {
+    width: 370px;
+    margin-right: 40px;
+    
+    h2 {
+      margin-bottom: 50px;
+    }
+
+    .calculator-info-summ {
+      margin-bottom: 30px;
+
+      .info-summ-currency {
+        display: inline-block;
+        padding-top: 7px;
+        line-height: 12px;
+      }
+  
+      .info-summ-result {
+        color: $accent-yellow;
+      }
+
+    }
+    
+    .calculator-button {
+      font-weight: 300;
+      padding: 15px 40px;
+      background: $blue-2;
+      border-radius: 50px;
+    }
+
+  }
+
+  .calculator-configs {
+    width: 100%;
+    padding: 0 20px;
+
+    .configs-line {
+      display: flex;
+      width: 100%;
+      margin-bottom: 30px;
+
+      .configs-line-name {
+        width: 80px;
+        font-size: 14px;
+      }
+
+      .configs-line-name {
+        width: 10%;
+      }
+
+      .configs-line-slider {
+        width: 70%;
+        padding: 8px 0;
+
+        .rangeslider {
+          &.rangeslider--horizontal {
+            height: 3px;
+            background: $gray-light;
+            box-shadow: none;
+          }
+          .rangeslider__fill {
+            background: transparent;
+            box-shadow: none;
+          }
+  
+          .rangeslider__handle {
+            width: 11px;
+            height: 11px;
+            top: -4px;
+            border: none;
+            background: $accent-yellow;
+            box-shadow: none;
+            transition: transform .2s ease;
+
+            .rangeslider__handle-content {
+              position: absolute;
+              width: 40px;
+              transform: translateX(-50%);
+              top: -22px;
+              left: 50%;
+              text-align: center;
+            }
+
+            &:hover {
+              transform: scale(1.1);
+            }
+  
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+      }
+
+      .configs-line-value {
+        width: 10%;
+        background: $gray-light1;
+        font-size: 14px;
+        width: 50px;
+        height: 36px;
+        text-align: center;
+        line-height: 36px;
+        margin: -10px 10px 0;
+        border-radius: 5px;
+      }
+
+      .configs-line-currency {
+        width: 10%;
+        padding: 0 10px;
+      }
+    }
+  }
+}

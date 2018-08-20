@@ -1,0 +1,37 @@
+.p-cloud-solutions {
+  .page-head {
+    background-size: 25%;
+    background-position-y: center;
+  }
+
+  .page-content {
+
+    .container {
+      align-items: flex-start;
+      
+      .page-content__left {
+        padding: 0;
+        background: transparent;
+      }
+    
+      .page-content__right {
+        padding-left: 60px;
+
+        h2 {
+          margin-top: 40px;
+          margin-bottom: 35px;
+        }
+      }
+    }
+
+    .partners {
+      padding-top: 40px;
+
+      .partners__item {
+        width: 70px;
+        align-self: center;
+      }
+    }
+
+  }
+}
