@@ -99,7 +99,7 @@ $(function () {
 		loop: true,
 	});
 
-	$('.price__item--slider').itemheight();
+	$('.prices-wrap--slider .price__item').itemheight();
 
 	// let openMenuFlag = false;
 

@@ -109,7 +109,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px;
+  padding: 30px;
   background: #fff;
   width: calc(100% / 3 - 20px);
   margin: 10px;
@@ -128,14 +128,18 @@
           font-size: 14px;
           font-family: $medium-font;
           vertical-align: top;
-          width: 35%;
+          width: 30%;
+
+          &.full-td {
+            width: 100% !important;
+          }
 
           &:first-child {
             font-family: $default-font;
             font-size: 13px;
             padding-right: 10px;
             color: #88898b;
-            width: 65%;
+            width: 70%;
           }
         }
       }
