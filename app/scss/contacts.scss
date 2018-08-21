@@ -1,0 +1,52 @@
+.p-contacts {
+  .c-contacts-block {
+    width: 100%;
+    background: $white;
+    display: flex;
+
+    .contacts-info {
+      padding: 40px;
+      width: 35%;
+
+      .contacts-info-field {
+        margin-bottom: 20px;
+
+        h3 {
+          font-weight: 500;
+          font-size: 20px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+
+    .contacts-map {
+      background: $blue-2;
+      width: 65%;
+      height: 454px;
+
+      #contacts-map-block {
+        width: 100%;
+        height: 100%;
+
+        .map-ballon {
+          padding: 10px;
+
+          .ballon-header {
+            font-weight: 600;
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+
+          .ballon-description {
+            margin-bottom: 10px;
+          }
+
+          .yellow {
+            color: $accent-yellow;
+          }
+        }
+
+      }
+    }
+  }
+}
