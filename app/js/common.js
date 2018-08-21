@@ -109,8 +109,20 @@ $(function () {
 		type: 'inline',
 	});
 
+	$('.calculator-button.button').magnificPopup({
+		type: 'inline',
+	})
+
 	$('.form-button .button').click(function(){
 		$.magnificPopup.close();
+	});
+
+	$('.arenda-button').magnificPopup({
+		type: 'inline'
+	});
+
+	$('.video-section__link').magnificPopup({
+		type: 'iframe',
 	});
 
 	// let openMenuFlag = false;
