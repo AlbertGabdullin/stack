@@ -8,3 +8,36 @@
 .u-va-top {
   vertical-align: top;
 }
+
+.u-ta-center {
+  text-align: center;
+}
+
+
+$marginMap: (
+  0: 0,
+  1: 10px,
+  2: 20px,
+  3: 30px,
+  4: 40px,
+  5: 50px
+);
+
+@each $name, $value in $marginMap {
+  .u-mb-#{$name} {
+    margin-bottom: $value;
+  }
+
+  .u-mt-#{$name} {
+    margin-top: $value;
+  }
+
+  .u-pt-#{$name} {
+    padding-top: $value;
+  }
+
+  .u-pb-#{$name} {
+    padding-bottom: $value;
+  }
+  
+}
