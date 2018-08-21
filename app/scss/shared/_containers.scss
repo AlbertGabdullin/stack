@@ -29,6 +29,7 @@
 .wrap {
   display: flex;
   margin: 0 70px;
+ 
 
   &--gray {
     background: $gray-light;
@@ -37,5 +38,10 @@
   @media(max-width: $screen-md){
     display: block;
     margin: 0;
+  }
+
+  @media(min-width: 1920px) {
+    max-width: 1920px;
+    margin: 0 auto;
   }
 }

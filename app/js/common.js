@@ -99,7 +99,7 @@ $(function () {
 		loop: true,
 	});
 
-	$('.price__item').itemheight();
+	$('.price__item--slider').itemheight();
 
 	// let openMenuFlag = false;
 

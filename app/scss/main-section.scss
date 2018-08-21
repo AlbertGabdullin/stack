@@ -269,6 +269,9 @@ h1 {
 
   &--bold {
     li {
+      font-size: 15px;
+      line-height: 21px;
+      font-family: $medium-font;
 
       &::before {
         background-image: url("/img/icons/checked-bold.svg") !important;
