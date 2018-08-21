@@ -1,0 +1,84 @@
+.tile {
+  &-section {
+    padding-top: 75px;
+    background: $gray-light1;
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    width: calc(50% - 20px);
+    margin: 10px;
+    background: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-head {
+      margin-bottom: 35px;
+    }
+
+    &-icon {
+      position: absolute;
+      right: 40px;
+      top: 40px;
+      max-width: 60px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      &-price {
+        font-size: 16px;
+        font-family: $medium-font;
+    
+        span {
+          font-size: 24px;
+        }
+    
+        span.yellow {
+          color: $accent-yellow;
+          font-size: 24px;
+        }
+    
+        &-nds {
+          font-size: 11px;
+          color: #7f8387;
+        }
+    
+        @media(max-width: $screen-xs) {
+          margin-bottom: 25px;
+        }
+      }
+  
+      &-button {
+        .button {
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+      }
+    }
+
+    &-text {
+      max-width: calc(100% - 60px);
+      margin-bottom: 50px;
+    }
+
+    &--text {
+      background: transparent;
+      padding: 10px;
+      justify-content: flex-start;
+    }
+  }
+}
