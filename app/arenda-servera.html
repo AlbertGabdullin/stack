@@ -463,7 +463,8 @@
         <ul class="list list--bold">
           <li>Возможность работы с приложениями,не поддерживающими виртуализацию</li>
           <li>Можно устанавливать необходимые модули дляспециальных сервисов. (USB-ключи, дополнительныекарты, видеокарты и
-            т.д.)</li>
+            т.д.)
+          </li>
           <li>Полноценное управление сервером – полнаясвобода действий</li>
         </ul>
       </div>
@@ -657,113 +658,170 @@
     </div>
 
     <div class="border-contacts">
-      <a href="" class="border-phone"></a>
+      <a href="#callback-form" class="border-phone"></a>
       <a href="" class="border-mail"></a>
     </div>
 
     <div class="search-button">
-      <a href="#"></a>
+      <a href="#search-modal" class="search-button-modal-trigger"></a>
     </div>
 
   </div>
 
+  <div class="hidden">
+    <div id="callback-form" class="callback-modal modal modal--padding">
+      <div class="modal-head">
+        <p>Оставьте заявку</p>
+        <span>и в ближайшее время с вами свяжется наш специалист!</span>
+      </div>
+      <form class="callback-modal__form">
+        <div class="callback-modal__form-input">
+          <label for="">Как к вам обращаться?</label>
+          <input type="text" placeholder="Ваше имя">
+        </div>
+
+        <div class="callback-modal__form-input">
+          <label for="">Номер телефона</label>
+          <input type="text" placeholder="+7 (___) ___ __ __">
+        </div>
+
+        <div class="callback-modal__form-input">
+          <label for="">Ваш e-mail</label>
+          <input type="text" placeholder="Mymail@mail.ru">
+        </div>
+
+        <div class="callback-modal__form-input">
+          <label for="">Ваш комментарий</label>
+          <textarea rows="5" placeholder="Введите комментарий"></textarea>
+        </div>
+
+        <div class="callback-modal__form-footer">
+          <div class="agree">
+            <label class="flex-label">
+              <input class="checkbox" type="checkbox" name="checkbox-agree">
+              <span class="checkbox-custom"></span>
+              <span class="label">Я даю свое согласие на использование предоставленных персональных данных в соответствии с Федеральным законом
+                от 27.07.2006 N 152-ФЗ "О персональных данных"</span>
+            </label>
+          </div>
+          <div class="form-button">
+            <button class="button" type="submit">Отправить заявку</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="search-modal" class="modal callback-modal search-modal">
+      <div class="callback-modal__head">
+        <p>Поиск по сайту</p>
+      </div>
+      <form class="callback-modal__form">
+        <div class="callback-modal__form-input">
+          <input type="text" placeholder="Начните вводить" class="search-modal-control">
+        </div>
+        <button class="button">Начать поиск</button>
+      </form>
+    </div>
+  </div>
+
 
   <div class="hidden">
-      <div id="arenda-form" class="modal modal-2">
-          <div class="modal-head modal--padding">
-            <p>Оставьте заявку</p>
-            <span>и в ближайшее время с вами свяжется наш специалист!</span>
-          </div>
-          <form class="modal__form-wrap">
-            <div class="modal__form modal--padding">
-                <div class="modal__form-left">
-                    <div class="modal__form-input">
-                      <label for="">Как к вам обращаться?</label>
-                      <input type="text" placeholder="Ваше имя">
-                    </div>
-          
-                    <div class="modal__form-input">
-                      <label for="">Номер телефона</label>
-                      <input type="text" placeholder="+7 (___) ___ __ __">
-                    </div>
-          
-                    <div class="modal__form-input">
-                      <label for="">Ваш e-mail</label>
-                      <input type="text" placeholder="Mymail@mail.ru">
-                    </div>
-          
-                    <div class="modal__form-input">
-                      <label for="">Ваш комментарий</label>
-                      <textarea rows="5" placeholder="Введите комментарий"></textarea>
-                    </div>
-    
-                    <div class="agree">
-                        <label class="flex-label">
-                            <input class="checkbox" type="checkbox" name="checkbox-agree">
-                            <span class="checkbox-custom"></span>
-                            <span class="label">Я даю свое согласие на использование предоставленных персональных данных в соответствии с Федеральным законом от 27.07.2006 N 152-ФЗ "О персональных данных"</span>
-                        </label>
-                    </div>
-                  </div>
-                  <div class="modal__form-right">
-                    <div class="modal__form-right--top">
-          
-                      <div class="modal__form-right-head">
-                          <p>Аренда сервера</p>
-                          <span>Ваша конфигурация</span>
-                      </div>
-                      
-                      <ul class="leader-dots-list">
-                        <li>
-                          <p>vCPU</p>
-                          <span>2</span>
-                        </li>
-          
-                        <li>
-                          <p>vRAM</p>
-                          <span>8</span>
-                        </li>
-          
-                        <li>
-                          <p>vSAS</p>
-                          <span>36</span>
-                        </li>
-                        <li>
-                          <p>vSATA</p>
-                          <span>300</span>
-                        </li>
-                        <li>
-                          <p>SSD</p>
-                          <span>200</span>
-                        </li>
-                        <li>
-                          <p>Internet</p>
-                          <span>100</span>
-                        </li>
-                        <li>
-                          <p>IPv4</p>
-                          <span>4</span>
-                        </li>
-          
-                      </ul>
-                    </div>
-          
-                    <div class="modal__form-right--bottom">
-                      <p class="summ-text">Итого к оплате</p>
-                      <div class="summ-price">
-                          <p>
-                            <span class="yellow">3600 Р</span>
-                            <span>/</span>
-                            <sup>мес.</sup>
-                          </p>
-                          <p class="summ-price-nds">Стоимость с учетом НДС</p>
-                      </div>
-                    </div>
-                  </div>
+    <div id="arenda-form" class="modal modal-2">
+      <div class="modal-head modal--padding">
+        <p>Оставьте заявку</p>
+        <span>и в ближайшее время с вами свяжется наш специалист!</span>
+      </div>
+      <form class="modal__form-wrap">
+        <div class="modal__form modal--padding">
+          <div class="modal__form-left">
+            <div class="modal__form-input">
+              <label for="">Как к вам обращаться?</label>
+              <input type="text" placeholder="Ваше имя">
             </div>
-            <button class="button">Отправить заявку</button>
-          </form>
+
+            <div class="modal__form-input">
+              <label for="">Номер телефона</label>
+              <input type="text" placeholder="+7 (___) ___ __ __">
+            </div>
+
+            <div class="modal__form-input">
+              <label for="">Ваш e-mail</label>
+              <input type="text" placeholder="Mymail@mail.ru">
+            </div>
+
+            <div class="modal__form-input">
+              <label for="">Ваш комментарий</label>
+              <textarea rows="5" placeholder="Введите комментарий"></textarea>
+            </div>
+
+            <div class="agree">
+              <label class="flex-label">
+                <input class="checkbox" type="checkbox" name="checkbox-agree">
+                <span class="checkbox-custom"></span>
+                <span class="label">Я даю свое согласие на использование предоставленных персональных данных в соответствии с Федеральным законом
+                  от 27.07.2006 N 152-ФЗ "О персональных данных"</span>
+              </label>
+            </div>
+          </div>
+          <div class="modal__form-right">
+            <div class="modal__form-right--top">
+
+              <div class="modal__form-right-head">
+                <p>Аренда сервера</p>
+                <span>Ваша конфигурация</span>
+              </div>
+
+              <ul class="leader-dots-list">
+                <li>
+                  <p>vCPU</p>
+                  <span>2</span>
+                </li>
+
+                <li>
+                  <p>vRAM</p>
+                  <span>8</span>
+                </li>
+
+                <li>
+                  <p>vSAS</p>
+                  <span>36</span>
+                </li>
+                <li>
+                  <p>vSATA</p>
+                  <span>300</span>
+                </li>
+                <li>
+                  <p>SSD</p>
+                  <span>200</span>
+                </li>
+                <li>
+                  <p>Internet</p>
+                  <span>100</span>
+                </li>
+                <li>
+                  <p>IPv4</p>
+                  <span>4</span>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="modal__form-right--bottom">
+              <p class="summ-text">Итого к оплате</p>
+              <div class="summ-price">
+                <p>
+                  <span class="yellow">3600 Р</span>
+                  <span>/</span>
+                  <sup>мес.</sup>
+                </p>
+                <p class="summ-price-nds">Стоимость с учетом НДС</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <button class="button">Отправить заявку</button>
+      </form>
+    </div>
   </div>
 
   <script src="js/scripts.min.js"></script>
