@@ -13,6 +13,14 @@
   text-align: center;
 }
 
+.u-text-dark {
+  color: $gray;
+}
+
+.u-td-none {
+  text-decoration: none;
+}
+
 
 $marginMap: (
   0: 0,
@@ -20,7 +28,8 @@ $marginMap: (
   2: 20px,
   3: 30px,
   4: 40px,
-  5: 50px
+  5: 50px,
+  6: 60px,
 );
 
 @each $name, $value in $marginMap {
