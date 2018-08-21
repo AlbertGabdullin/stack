@@ -1,8 +1,49 @@
+.modal {
+
+  .checkbox {
+    display: none;
+  }
+  .checkbox-custom {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid $accent-yellow;
+  }
+  
+  .checkbox-custom,
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+ 
+  .checkbox:checked + .checkbox-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: #fff;
+    border: 6px solid $accent-yellow;
+  }
+}
+
+
 .callback-modal {
   background: #fff;
   padding: 50px;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+
+  .mfp-close {
+    right: 40px;
+    top: 50px;
+    font-size: 50px;
+    color: $accent-yellow;
+    opacity: 1;
+  }
 
   &__head {
     margin-bottom: 50px;
