@@ -105,8 +105,13 @@ $(function () {
 		type: 'inline',
 	});
 
+
 	$('.search-button-modal-trigger').magnificPopup({
 		type: 'inline'
+
+	$('.form-button .button').click(function(){
+		$.magnificPopup.close();
+
 	});
 
 	// let openMenuFlag = false;
