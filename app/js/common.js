@@ -93,7 +93,7 @@ $(function () {
 		nav: true
 	});
 
-	$('.prices-wrap').owlCarousel({
+	$('.prices-wrap--slider').owlCarousel({
 		items: 2.5,
 		nav: true,
 		loop: true,
