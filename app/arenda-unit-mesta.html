@@ -594,7 +594,7 @@
     </div>
 
     <div class="search-button">
-      <a href="#"></a>
+      <a href="#search-modal" class="search-button-modal-trigger"></a>
     </div>
 
   </div>
@@ -636,6 +636,20 @@
               </label>
           </div>
         </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="hidden">
+    <div id="search-modal" class="callback-modal search-modal">
+      <div class="callback-modal__head">
+        <p>Поиск по сайту</p>
+      </div>
+      <form class="callback-modal__form">
+        <div class="callback-modal__form-input">
+          <input type="text" placeholder="Начните вводить" class="search-modal-control">
+        </div>
+        <button class="button">Начать поиск</button>
       </form>
     </div>
   </div>

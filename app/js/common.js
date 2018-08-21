@@ -105,6 +105,10 @@ $(function () {
 		type: 'inline',
 	});
 
+	$('.search-button-modal-trigger').magnificPopup({
+		type: 'inline'
+	});
+
 	// let openMenuFlag = false;
 
 	// $('.menu__item-link').hover(function() {
