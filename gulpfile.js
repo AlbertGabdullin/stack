@@ -41,7 +41,8 @@ gulp.task('js', function() {
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/OwlCarousel/dist/owl.carousel.js',
 		'./app/libs/animate/animate-css.js',
-		'./app/libs/range-slider/rangeslider.min.js'
+		'./app/libs/range-slider/rangeslider.min.js',
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
 		])
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)

@@ -101,6 +101,10 @@ $(function () {
 
 	$('.prices-wrap--slider .price__item').itemheight();
 
+	$('.border-phone').magnificPopup({
+		type: 'inline',
+	});
+
 	// let openMenuFlag = false;
 
 	// $('.menu__item-link').hover(function() {

@@ -1,0 +1,61 @@
+.callback-modal {
+  background: #fff;
+  padding: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &__head {
+    margin-bottom: 50px;
+
+    p {
+      font-size: 26px;
+      line-height: 34px;
+      margin-bottom: 10px;
+    }
+
+    span {
+      font-size: 15px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-input {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        width: calc(100% / 3 - 10px);
+        margin-right: 10px;
+      }
+
+      &:nth-child(3) {
+        margin-right: 0 !important;
+      }
+
+      &:nth-child(4) {
+        width: 100%;
+        margin-top: 5px;
+      }
+
+      label {
+        font-size: 12px;
+        color: #666;
+        display: block;
+        margin-bottom: 5px;
+      }
+      input,
+      textarea {
+        padding: 15px 20px;
+        width: 100%;
+        border: none;
+        background: $gray-light;
+        font-size: 15px;
+        resize: none;
+      }
+
+    }
+  }
+}
