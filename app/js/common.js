@@ -105,6 +105,10 @@ $(function () {
 		type: 'inline',
 	});
 
+	$('.form-button .button').click(function(){
+		$.magnificPopup.close();
+	});
+
 	// let openMenuFlag = false;
 
 	// $('.menu__item-link').hover(function() {

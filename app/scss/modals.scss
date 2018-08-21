@@ -1,5 +1,4 @@
 .modal {
-
   .checkbox {
     display: none;
   }
@@ -8,12 +7,6 @@
     width: 20px;
     height: 20px;
     border: 2px solid $accent-yellow;
-  }
-  
-  .checkbox-custom,
-  .label {
-    display: inline-block;
-    vertical-align: middle;
   }
  
   .checkbox:checked + .checkbox-custom::before {
@@ -26,6 +19,15 @@
     left: 2px;
     background: #fff;
     border: 6px solid $accent-yellow;
+  }
+
+  .label {
+    width: calc(100% - 20px);
+    padding-left: 15px;
+  }
+
+  .flex-label {
+    display: flex ;
   }
 }
 
@@ -79,6 +81,7 @@
       &:nth-child(4) {
         width: 100%;
         margin-top: 5px;
+        margin-bottom: 35px;
       }
 
       label {
@@ -98,5 +101,25 @@
       }
 
     }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+
+      .agree {
+        width: 70%;
+      }
+      .form-button {
+        width: 30%;
+        text-align: right;
+
+        .button {
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
   }
+
+  
 }
