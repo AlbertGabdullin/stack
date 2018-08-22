@@ -53,6 +53,8 @@ $(function () {
 			$blocks.height(maxH);
 	}
 
+	$('.useful-articles__item').itemheight();
+
 
 	//slider main-section
 

@@ -39,20 +39,25 @@
     .owl-prev,
     .owl-next {
       position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       width: 36px;
       height: 36px;
-      background: $accent-blue !important;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 50%;
-      margin-top: -18px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
       
       span {
-        color: #fff;
-        font-size: 23px;
+        display: none;
       }
+    }
+
+    .owl-prev {
+      background-image: url('/img/Slider_left.svg') !important;
+    }
+
+    .owl-next {
+      background-image: url('/img/Slider_right.svg') !important;
     }
 
     .owl-prev {
