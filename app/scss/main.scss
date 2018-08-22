@@ -136,13 +136,14 @@ b, strong {
 	a {
 		margin-bottom: 10px;
 		display: flex;
-		width: 30px;
-		height: 30px;
+		width: 24px;
+		height: 24px;
 		justify-content: center;
 		align-items: center;
 		text-decoration: none;
 		padding: 5px;
 		font-weight: bold;
+		font-size: 11px;
 		color: $gray;
 		border-radius: 50%;
 		transition: .3s ease;
@@ -201,6 +202,9 @@ b, strong {
 		width: 35px;
 		height: 35px;
 		margin-bottom: 20px;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
 
 		&.border-phone {
 			background-image: url('/img/icons/phone-button.svg');
