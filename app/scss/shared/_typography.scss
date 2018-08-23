@@ -10,6 +10,11 @@ h1 {
     font-size: 30px;
     line-height: 38px;
   }
+
+  @media(max-width: $screen-xs) {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }
 
 h2 {
@@ -19,6 +24,11 @@ h2 {
   @media(max-width: $screen-md) {
     font-size: 26px;
     line-height: 34px;
+  }
+
+  @media(max-width: $screen-xs) {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 
@@ -30,10 +40,38 @@ h3 {
     font-size: 24px;
     line-height: 32px;
   }
+
+  @media(max-width: $screen-xs) {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  
+  @media(max-width: $screen-md) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  @media(max-width: $screen-xs) {
+    font-size: 19px;
+    line-height: 27px;
+  }
 }
 
 a {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
   color: $accent-yellow;
+
+  @media(max-width: $screen-xs) {
+    font-size: 13px;
+    line-height: 19px;
+  }
 }
 
 ul, li, a, p, h1, h2, h3, h4, h5, h6, label {

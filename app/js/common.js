@@ -95,6 +95,11 @@ $(function () {
 		nav: true
 	});
 
+	$('.post-slider').owlCarousel({
+		items: 1,
+		dots: true,
+	});
+
 	$('.prices-wrap--slider').owlCarousel({
 		items: 2.5,
 		nav: true,

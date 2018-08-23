@@ -1,3 +1,31 @@
+.breadcrumbs {
+  font-size: 13px;
+  margin-bottom: 70px;
+  font-family: $medium-font;
+
+  p {
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '\2022';
+      position: absolute;
+      right: -4px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding-left: 10px;
+    z-index: 1;
+  }
+}
+
 .page-head {
   background: #e2e7ef;
   padding-top: 45px;
@@ -12,33 +40,6 @@
 
   h1 {
     margin-bottom: 0;
-  }
-
-  .breadcrumbs {
-    font-size: 13px;
-    margin-bottom: 70px;
-
-    p {
-      display: inline-block;
-      padding-right: 10px;
-      position: relative;
-      z-index: 1;
-
-      &::after {
-        content: '\2022';
-        position: absolute;
-        right: -4px;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 1;
-      }
-    }
-
-    a {
-      text-decoration: none;
-      padding-left: 10px;
-      z-index: 1;
-    }
   }
 }
 

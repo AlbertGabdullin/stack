@@ -54,16 +54,11 @@
 
     .owl-prev {
       background-image: url('/img/Slider_left.svg') !important;
+      left: -18px;
     }
 
     .owl-next {
       background-image: url('/img/Slider_right.svg') !important;
-    }
-
-    .owl-prev {
-      left: -18px;
-    }
-    .owl-next {
       right: -18px;
     }
   }
