@@ -1,4 +1,4 @@
-.link-block{
+.link-block {
   background: #ebeff5;
   padding-bottom: 120px;
 
@@ -22,9 +22,8 @@
 
     &--three {
       .link-block__item {
-        width: calc( 100% / 3 - 20px);
+        width: calc(100% / 3 - 20px);
         margin: 10px !important;
-
       }
     }
   }
@@ -45,6 +44,13 @@
       top: 35px;
       width: 55px;
       height: 55px;
+
+      @media (max-width: $screen-xs) {
+        top: 25px;
+        right: 25px;
+        width: 45px;
+        height: 45px;
+      }
     }
 
     &-head {
@@ -75,6 +81,33 @@
 
     &--blue {
       background: $accent-blue;
+    }
+
+    @media (max-width: $screen-sm) {
+      margin: 0 auto !important;
+      width: 100%;
+      max-width: 450px;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding: 25px;
+    }
+  }
+
+  .owl-dots {
+    text-align: center;
+    margin-top: 10px;
+
+    .owl-dot {
+      width: 9px;
+      height: 9px;
+      background: #b6c6d9;
+      border-radius: 50%;
+      margin: 0 10px;
+
+      &.active {
+        background: $accent-yellow;
+      }
     }
   }
 }

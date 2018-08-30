@@ -14,9 +14,7 @@ var gulp          = require('gulp'),
 
 gulp.task('browser-sync', function() {
 	browserSync({
-		server: {
-			baseDir: 'app'
-		},
+		proxy: "localhost:8888",
 		notify: false,
 		// open: false,
 		// online: false, // Work Offline Without Internet Connection
@@ -68,7 +66,7 @@ gulp.task('rsync', function() {
 gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browserSync.reload)
+	gulp.watch('app/*.php', browserSync.reload)
 });
 
 gulp.task('default', ['watch']);

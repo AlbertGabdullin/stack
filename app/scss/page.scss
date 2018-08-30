@@ -10,7 +10,7 @@
     z-index: 1;
 
     &::after {
-      content: '\2022';
+      content: "\2022";
       position: absolute;
       right: -4px;
       top: 50%;
@@ -41,10 +41,20 @@
   h1 {
     margin-bottom: 0;
   }
+
+  @media (max-width: $screen-md) {
+    padding-bottom: 130px;
+  }
+
+  @media (max-width: $screen-xs) {
+    background-image: none !important;
+  }
 }
 
 .align-item-center {
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .page-content {
@@ -54,11 +64,53 @@
 
   .container {
     width: 100%;
+
+    &--flex {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__bottom {
+    margin-top: 50px;
+  }
+
+  &__super {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    background: #fff;
+    padding: 45px;
+
+    &-head {
+      margin-bottom: 10px;
+    }
+
+    &-left {
+      width: calc(100% - 250px);
+
+      @media (max-width: $screen-md) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
+    &-right {
+      width: 250px;
+
+      @media (max-width: $screen-md) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: $screen-md) {
+      flex-wrap: wrap;
+    }
   }
 
   &__left {
-    background: #fff;
     width: 40%;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -68,11 +120,24 @@
       margin: 0 auto;
       display: block;
     }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
   }
 
   &__right {
     width: 60%;
     padding-left: 60px;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+      padding-left: 0;
+    }
   }
 }
 
@@ -87,19 +152,32 @@
 
   &__wrap {
     display: flex;
+    flex-wrap: wrap;
     margin-right: 60px;
     background: $gray;
-    
+
     color: #fff;
+
+    @media (max-width: $screen-md) {
+      margin-right: 0;
+    }
   }
 
   &__left {
     padding: 80px 60px;
     width: 50%;
+
     &-head {
       font-size: 30px;
       margin-bottom: 23px;
+
+      @media (max-width: $screen-xs) {
+        font-size: 26px;
+        line-height: 30px;
+        margin-bottom: 15px;
+      }
     }
+
     &-text {
       font-size: 16px;
       margin-bottom: 30px;
@@ -109,6 +187,14 @@
         text-decoration: none;
       }
     }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding: 30px;
+    }
   }
 
   &__right {
@@ -116,14 +202,14 @@
     width: 50%;
     top: -60px;
     right: -60px;
-   
+
     &-photo {
       position: absolute;
       width: 100%;
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;  
+      background-position: center center;
     }
 
     .your-master {
@@ -144,7 +230,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
@@ -153,6 +239,14 @@
       z-index: 2;
       left: 0;
       top: 0;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+      height: 300px;
+      order: -1;
+      top: 0px;
+      right: 0;
     }
   }
 }

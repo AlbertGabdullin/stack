@@ -1,5 +1,4 @@
 .p-cloud-solutions {
-
   .page-head {
     background-size: 25%;
     background-position-y: center;
@@ -16,7 +15,7 @@
       padding: 0;
       background: transparent;
     }
-  
+
     .page-content__right {
       padding-left: 60px;
 
@@ -35,30 +34,44 @@
       }
     }
   }
+}
 
-  .cloud-advantages {
-    padding: 80px 0;
+.cloud-advantages {
+  padding: 80px 0;
 
-    h2 {
-      margin-bottom: 60px;
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  .cloud-advantages-content {
+    display: flex;
+    justify-content: space-between;
+
+    .cloud-advantages-list {
+      padding-left: 25px;
+      width: 280px;
+      margin: 0;
+      list-style-image: url("../img/icons/checked-blue.svg");
+
+      .cloud-advantages-item {
+        padding-left: 10px;
+        margin-bottom: 35px;
+        font-family: $medium-font;
+      }
+
+      @media (max-width: $screen-md) {
+        width: 50%;
+        padding-right: 20px;
+      }
+
+      @media (max-width: $screen-sm) {
+        width: 100%;
+        padding-right: 0;
+      }
     }
 
-    .cloud-advantages-content {
-      display: flex;
-      justify-content: space-between;
-
-      .cloud-advantages-list {
-        padding-left: 25px;
-        width: 280px;
-        margin: 0;
-        list-style-image: url('../img/icons/checked-blue.svg');
-        
-        .cloud-advantages-item {
-          padding-left: 10px;
-          margin-bottom: 35px;
-          font-family: $medium-font;
-        }
-      }
+    @media (max-width: $screen-md) {
+      flex-wrap: wrap;
     }
   }
 }

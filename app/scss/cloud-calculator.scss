@@ -8,7 +8,7 @@
   .calculator-info {
     width: 370px;
     margin-right: 40px;
-    
+
     h2 {
       margin-bottom: 50px;
     }
@@ -21,13 +21,12 @@
         padding-top: 7px;
         line-height: 12px;
       }
-  
+
       .info-summ-result {
         color: $accent-yellow;
       }
-
     }
-    
+
     .calculator-button {
       font-weight: 300;
       padding: 15px 40px;
@@ -36,6 +35,10 @@
       border: none;
     }
 
+    @media (max-width: $screen-md) {
+      width: 100%;
+      margin-right: 0;
+    }
   }
 
   .calculator-configs {
@@ -70,7 +73,7 @@
             background: transparent;
             box-shadow: none;
           }
-  
+
           .rangeslider__handle {
             width: 11px;
             height: 11px;
@@ -78,7 +81,7 @@
             border: none;
             background: $accent-yellow;
             box-shadow: none;
-            transition: transform .2s ease;
+            transition: transform 0.2s ease;
 
             .rangeslider__handle-content {
               position: absolute;
@@ -92,13 +95,12 @@
             &:hover {
               transform: scale(1.1);
             }
-  
+
             &::after {
               display: none;
             }
           }
         }
-
       }
 
       .configs-line-value {
@@ -118,5 +120,14 @@
         padding: 0 10px;
       }
     }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    flex-wrap: wrap;
   }
 }

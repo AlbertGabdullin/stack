@@ -20,11 +20,15 @@
 
     &-photo {
       height: 315px;
-      min-width: 235px;
+      max-width: 235px;
       background-size: cover;
       background-position: center bottom;
       background-repeat: no-repeat;
       margin-bottom: 25px;
+
+      @media (max-width: $screen-md) {
+        height: 270px;
+      }
     }
 
     &-name {
@@ -48,6 +52,10 @@
 
     &:last-child {
       padding-right: 0;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
     }
   }
 }

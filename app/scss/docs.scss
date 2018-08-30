@@ -1,0 +1,67 @@
+.docs {
+  padding-top: 80px;
+  padding-bottom: 70px;
+
+  .container {
+    width: 100%;
+  }
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+  }
+
+  &__item {
+    background: #fff;
+    width: 100%;
+    padding: 35px;
+
+    &-wrap {
+      width: calc(100% / 3);
+      padding: 10px;
+    }
+
+    &-name {
+      font-size: 19px;
+      display: block;
+      margin-bottom: 65px;
+    }
+
+    &-icon {
+      width: 40px;
+      margin-bottom: 25px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-filename {
+      font-size: 13px;
+      color: #7e848c;
+      font-family: $default-font;
+      text-decoration: none;
+      font-weight: normal;
+      display: block;
+      position: relative;
+      padding-left: 40px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 30px;
+        width: 16px;
+        background-image: url('/img/icons/arr-bottom.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}

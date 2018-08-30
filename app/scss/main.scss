@@ -262,6 +262,27 @@ b, strong {
 	display: flex;
 }
 
+.col {
+	display: flex;
+	flex-wrap: wrap;
+
+	.list {
+		width: 100%;
+	}
+}
+
+.col-6 {
+	width: 50%;
+
+	@media(max-width: $screen-md) {
+		width: 100%;
+	}
+
+	.list {
+		width: 100% !important;
+	}
+}
+
 
 @import "./header";
 @import "./main-section";
@@ -290,3 +311,4 @@ b, strong {
 @import "./modals.scss";
 @import "./contacts";
 @import "./posts";
+@import "./docs";

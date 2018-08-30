@@ -7,6 +7,7 @@
   .container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
   }
 
   h3 {
@@ -20,19 +21,33 @@
   &__left {
     width: 60%;
     padding-right: 50px;
+
+    @media(max-width: $screen-md) {
+      width: 100%;
+      padding-right: 0;
+    }
   }
 
   &__right {
     width: 40%;
+
+    @media(max-width: $screen-md) {
+      width: 100%;
+    }
   }
 }
 
 .licenze-items {
   position: relative;
   
-  a {
+  .licenze__item {
     display: block;
     padding: 5px;
+
+    @media(max-width: $screen-xs) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
   }
 
   .owl-nav {

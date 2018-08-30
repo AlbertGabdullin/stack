@@ -7,6 +7,23 @@
   &-items {
     display: flex;
     flex-wrap: wrap;
+
+    .owl-dots {
+      text-align: center;
+      margin-top: 35px;
+
+      .owl-dot {
+        width: 9px;
+        height: 9px;
+        background: #b6c6d9;
+        border-radius: 50%;
+        margin: 0 10px;
+
+        &.active {
+          background: $accent-yellow;
+        }
+      }
+    }
   }
 
   &__item {
@@ -21,16 +38,29 @@
 
     &-head {
       margin-bottom: 35px;
+      width: calc(100% - 60px);
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 20px;
+        width: 100%;
+      }
     }
 
     &-icon {
       position: absolute;
       right: 40px;
       top: 40px;
-      max-width: 60px;
+      width: 60px;
 
       img {
         width: 100%;
+      }
+
+      @media (max-width: $screen-xs) {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
       }
     }
 
@@ -38,47 +68,64 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-  
+
       &-price {
         font-size: 16px;
         font-family: $medium-font;
-    
+
         span {
           font-size: 24px;
         }
-    
+
         span.yellow {
           color: $accent-yellow;
           font-size: 24px;
         }
-    
+
         &-nds {
           font-size: 11px;
           color: #7f8387;
         }
-    
-        @media(max-width: $screen-xs) {
+
+        @media (max-width: $screen-xs) {
           margin-bottom: 25px;
         }
       }
-  
+
       &-button {
+        text-align: right;
+        width: 100%;
+
         .button {
           padding-right: 30px;
           padding-left: 30px;
+        }
+
+        @media (max-width: $screen-xs) {
+          text-align: left;
         }
       }
     }
 
     &-text {
-      max-width: calc(100% - 60px);
-      margin-bottom: 50px;
+      width: 100%;
+      margin-bottom: 35px;
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 20px;
+      }
     }
 
     &--text {
       background: transparent;
       padding: 10px;
       justify-content: flex-start;
+    }
+
+    @media (max-width: $screen-md) {
+      margin: 0 auto;
+      max-width: 480px;
+      width: 100%;
     }
   }
 }
