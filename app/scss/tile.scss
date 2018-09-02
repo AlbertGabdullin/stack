@@ -1,7 +1,7 @@
 .tile {
   &-section {
     padding-top: 75px;
-    background: $gray-light1;
+    background: $gray-light;
   }
 
   &-items {
@@ -23,12 +23,17 @@
           background: $accent-yellow;
         }
       }
+
+      @media (max-width: $screen-xs) {
+        padding-bottom: 35px;
+      }
     }
   }
 
   &__item {
     position: relative;
     width: calc(50% - 20px);
+    max-width: 480px;
     margin: 10px;
     background: #fff;
     padding: 40px;
@@ -57,17 +62,15 @@
       }
 
       @media (max-width: $screen-xs) {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin-bottom: 20px;
+        display: none;
       }
     }
 
     &-footer {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
 
       &-price {
         font-size: 16px;
@@ -89,12 +92,12 @@
 
         @media (max-width: $screen-xs) {
           margin-bottom: 25px;
+          width: 100%;
         }
       }
 
       &-button {
         text-align: right;
-        width: 100%;
 
         .button {
           padding-right: 30px;
@@ -122,10 +125,22 @@
       justify-content: flex-start;
     }
 
-    @media (max-width: $screen-md) {
-      margin: 0 auto;
-      max-width: 480px;
+    @media (max-width: $screen-sm) {
       width: 100%;
+      margin: 0 auto 20px auto;
+    }
+  }
+
+  &-items--slider {
+    .tile__item {
+      @media (max-width: $screen-md) {
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      @media (max-width: $screen-xs) {
+        margin-bottom: 0;
+      }
     }
   }
 }

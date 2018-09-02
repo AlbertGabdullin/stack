@@ -11,6 +11,10 @@
   .page-content {
     padding-bottom: 80px;
 
+    &--super {
+      padding-top: 0;
+    }
+
     .page-content__left {
       padding: 0;
       background: transparent;
@@ -22,15 +26,6 @@
       h2 {
         margin-top: 40px;
         margin-bottom: 35px;
-      }
-    }
-
-    .partners {
-      padding-top: 40px;
-
-      .partners__item {
-        width: 70px;
-        align-self: center;
       }
     }
   }
@@ -73,5 +68,9 @@
     @media (max-width: $screen-md) {
       flex-wrap: wrap;
     }
+  }
+
+  @media (max-width: $screen-xs) {
+    padding: 50px 0;
   }
 }

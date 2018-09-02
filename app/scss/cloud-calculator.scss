@@ -1,3 +1,9 @@
+.calculator-section {
+  .container {
+    background: #fff;
+  }
+}
+
 .c-cloud-calculator {
   width: 100%;
   padding: 75px 60px;
@@ -9,36 +15,60 @@
     width: 370px;
     margin-right: 40px;
 
-    h2 {
-      margin-bottom: 50px;
-    }
+    h3 {
+      margin-bottom: 150px;
 
-    .calculator-info-summ {
-      margin-bottom: 30px;
-
-      .info-summ-currency {
-        display: inline-block;
-        padding-top: 7px;
-        line-height: 12px;
+      @media (max-width: $screen-md) {
+        margin-bottom: 40px;
       }
-
-      .info-summ-result {
-        color: $accent-yellow;
-      }
-    }
-
-    .calculator-button {
-      font-weight: 300;
-      padding: 15px 40px;
-      background: $blue-2;
-      border-radius: 50px;
-      border: none;
     }
 
     @media (max-width: $screen-md) {
       width: 100%;
       margin-right: 0;
     }
+
+    @media (max-width: $screen-md) {
+      .button {
+        display: none;
+      }
+    }
+  }
+
+  .calculator-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .calculator-info-summ {
+    margin-bottom: 30px;
+    font-size: 26px;
+
+    &--desktop {
+      @media (max-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+    }
+  }
+
+  .info-summ-currency {
+    display: inline-block;
+    padding-top: 7px;
+    line-height: 12px;
+  }
+
+  .info-summ-result {
+    color: $accent-yellow;
+    font-family: $medium-font;
   }
 
   .calculator-configs {
@@ -49,10 +79,18 @@
       display: flex;
       width: 100%;
       margin-bottom: 30px;
+      position: relative;
 
       .configs-line-name {
         width: 80px;
         font-size: 14px;
+
+        @media (max-width: $screen-xs) {
+          position: absolute;
+          left: 0;
+          top: -12px;
+          font-size: 12px;
+        }
       }
 
       .configs-line-name {
@@ -85,11 +123,12 @@
 
             .rangeslider__handle-content {
               position: absolute;
-              width: 40px;
               transform: translateX(-50%);
               top: -22px;
               left: 50%;
               text-align: center;
+              background: #fff;
+              z-index: 10;
             }
 
             &:hover {
@@ -100,6 +139,10 @@
               display: none;
             }
           }
+        }
+
+        @media (max-width: $screen-xs) {
+          width: 100%;
         }
       }
 
@@ -113,21 +156,40 @@
         line-height: 36px;
         margin: -10px 10px 0;
         border-radius: 5px;
+
+        @media (max-width: $screen-xs) {
+          display: none;
+        }
       }
 
       .configs-line-currency {
         width: 10%;
         padding: 0 10px;
+
+        @media (max-width: $screen-xs) {
+          width: 46px;
+          text-align: right;
+          position: absolute;
+          right: 0;
+          top: -12px;
+          font-size: 12px;
+        }
       }
     }
 
     @media (max-width: $screen-md) {
       width: 100%;
       padding: 0;
+      margin-bottom: 20px;
     }
   }
 
   @media (max-width: $screen-md) {
     flex-wrap: wrap;
+    padding: 55px 40px;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding: 45px 0;
   }
 }

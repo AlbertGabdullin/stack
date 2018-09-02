@@ -13,7 +13,7 @@
     </div>
   </section>
 
-  <section class="page-content wrap">
+  <section class="page-content wrap wrap--gray">
     <div class="container align-item-center">
       <div class="page-content__left">
         <img src="img/server-cell.jpg" alt="">
@@ -25,7 +25,7 @@
     </div>
   </section>
 
-  <section class="page-content wrap">
+  <section class="page-content page-content--super wrap wrap--gray">
     <div class="container">
       <div class="page-content__super">
         <div class="page-content__super-left">

@@ -3,7 +3,7 @@
 	include 'header.php';
 ?>
 
-	<section class="page-head wrap" style="background-image: url('/img/settings.png');">
+	<section class="page-head wrap" style="background-image: url('/img/office.svg');">
 		<div class="container">
 			<div class="breadcrumbs">
 				<p>Главная</p>

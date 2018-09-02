@@ -1,5 +1,5 @@
 .price-section {
-  background: $gray-light1;
+  background: $gray-light;
   padding-bottom: 80px;
 
   h2 {
@@ -46,6 +46,7 @@
       width: auto;
       margin-right: 10px;
       margin-left: 10px;
+      max-width: 390px;
     }
   }
 
@@ -53,8 +54,8 @@
     .price__item {
       margin: 20px;
       width: auto;
-      max-width: 685px;
       padding: 40px;
+      max-width: 390px;
 
       &-head {
         margin-bottom: 35px;
@@ -226,5 +227,19 @@
 
   &:nth-child(3) {
     margin-right: 0;
+  }
+
+  @media (max-width: $screen-md) {
+    max-width: 390px;
+    width: 100%;
+    margin-right: 20px;
+    display: block;
+  }
+
+  @media (max-width: $screen-sm) {
+    max-width: 390px;
+    width: 100%;
+    display: block;
+    margin: 0 auto !important;
   }
 }

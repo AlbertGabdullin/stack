@@ -13,17 +13,17 @@
     max-width: 500px;
     margin-bottom: 110px;
 
-    @media(max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       margin-bottom: 60px;
       max-width: 400px;
     }
 
-    @media(max-width: $screen-sm) {
+    @media (max-width: $screen-sm) {
       margin-bottom: 60px;
       max-width: 350px;
     }
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-xs) {
       max-width: 100%;
     }
   }
@@ -39,7 +39,6 @@
     justify-content: stretch;
     flex-wrap: wrap;
     flex: 1;
-    
 
     .owl-dots {
       text-align: center;
@@ -48,7 +47,7 @@
       .owl-dot {
         width: 9px;
         height: 9px;
-        background: #b6c6d9;;
+        background: #b6c6d9;
         border-radius: 50%;
         margin: 0 10px;
 
@@ -59,19 +58,19 @@
     }
   }
 
-  @media(max-width: $screen-lg) {
+  @media (max-width: $screen-lg) {
     background-position: 120% 10%;
     background-size: 50%;
   }
 
-  @media(max-width: $screen-md) {
+  @media (max-width: $screen-md) {
     background-position: 120% 10%;
     background-size: 40%;
     padding-top: 60px;
     padding-bottom: 50px;
   }
 
-  @media(max-width: $screen-xs) {
+  @media (max-width: $screen-xs) {
     background-image: none;
   }
 }
@@ -88,8 +87,6 @@ h1 {
     }
   }
 }
-
-
 
 .main__service {
   display: flex;
@@ -128,17 +125,16 @@ h1 {
       }
     }
 
-    @media(max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       width: 100%;
     }
-
   }
 
   &-head {
     position: relative;
     margin-bottom: 30px;
 
-    @media(max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       margin-bottom: 25px;
     }
   }
@@ -149,7 +145,7 @@ h1 {
     color: $accent-yellow;
     margin-bottom: 20px;
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-xs) {
       margin-bottom: 15px;
     }
   }
@@ -169,7 +165,7 @@ h1 {
       width: 100%;
     }
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-xs) {
       position: static;
       transform: none;
       margin-bottom: 15px;
@@ -180,15 +176,19 @@ h1 {
     font-size: 14px;
     margin-bottom: 35px;
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-xs) {
       margin-bottom: 20px;
     }
   }
 
   &-advantages {
-    margin-bottom: 100px;
-    
-    @media(max-width: $screen-xs) {
+    margin-bottom: 50px;
+
+    .list {
+      font-size: 13px;
+    }
+
+    @media (max-width: $screen-xs) {
       .list {
         display: none;
         padding-top: 20px;
@@ -199,7 +199,7 @@ h1 {
       }
     }
 
-    @media(max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       margin-bottom: 55px;
     }
   }
@@ -208,7 +208,7 @@ h1 {
     display: flex;
     justify-content: space-between;
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-xs) {
       display: block;
     }
   }
@@ -231,16 +231,16 @@ h1 {
       color: #7f8387;
     }
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-xs) {
       margin-bottom: 25px;
     }
   }
 
-  @media(max-width: $screen-md) {
+  @media (max-width: $screen-md) {
     margin: 0;
   }
 
-  @media(max-width: $screen-xs) {
+  @media (max-width: $screen-xs) {
     padding: 25px;
   }
 }
@@ -254,7 +254,7 @@ h1 {
     margin-bottom: 12px;
 
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       width: 25px;
       height: 15px;
@@ -286,6 +286,7 @@ h1 {
   &--plus {
     li {
       padding-left: 50px;
+      padding-right: 50px;
       font-size: 16px;
 
       &::before {
@@ -293,9 +294,12 @@ h1 {
         width: 20px;
         height: 20px;
       }
+
+      @media (max-width: $screen-md) {
+        padding-right: 0;
+      }
     }
   }
-
 }
 
 .show-advantages {

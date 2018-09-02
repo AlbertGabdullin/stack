@@ -24,6 +24,13 @@
     &-wrap {
       width: calc(100% / 3);
       padding: 10px;
+
+      @media (max-width: $screen-md) {
+        width: 50%;
+      }
+      @media (max-width: $screen-xs) {
+        width: 100%;
+      }
     }
 
     &-name {
@@ -52,13 +59,13 @@
       padding-left: 40px;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: 0;
         height: 30px;
         width: 16px;
-        background-image: url('/img/icons/arr-bottom.png');
+        background-image: url("/img/icons/arr-bottom.png");
         background-size: contain;
         background-repeat: no-repeat;
       }

@@ -13,7 +13,7 @@
 		</div>
 	</section>
 
-	<section class="page-content wrap">
+	<section class="p-contacts wrap wrap--gray">
 		<div class="container">
 			<div class="c-contacts-block u-mb-60">
 				<div class="contacts-info">

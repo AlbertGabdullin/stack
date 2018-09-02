@@ -22,7 +22,7 @@
     width: 60%;
     padding-right: 50px;
 
-    @media(max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       width: 100%;
       padding-right: 0;
     }
@@ -31,7 +31,7 @@
   &__right {
     width: 40%;
 
-    @media(max-width: $screen-md) {
+    @media (max-width: $screen-md) {
       width: 100%;
     }
   }
@@ -39,12 +39,16 @@
 
 .licenze-items {
   position: relative;
-  
+
   .licenze__item {
     display: block;
     padding: 5px;
 
-    @media(max-width: $screen-xs) {
+    @media (max-width: $screen-md) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: $screen-xs) {
       max-width: 80%;
       margin: 0 auto;
     }
@@ -61,21 +65,20 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center center;
-      
+
       span {
         display: none;
       }
     }
 
     .owl-prev {
-      background-image: url('/img/Slider_left.svg') !important;
+      background-image: url("/img/Slider_left.svg") !important;
       left: -18px;
     }
 
     .owl-next {
-      background-image: url('/img/Slider_right.svg') !important;
+      background-image: url("/img/Slider_right.svg") !important;
       right: -18px;
     }
   }
-  
 }

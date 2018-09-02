@@ -97,11 +97,10 @@ $(function() {
       }
     });
   }
-
   if ($(window).width() <= 992) {
-    $(".tile-items").addClass("owl-carousel");
-    $(".tile-items").owlCarousel({
-      items: 1,
+    $(".tile-items--slider").addClass("owl-carousel");
+    $(".tile-items--slider").owlCarousel({
+      items: 2,
       dots: true
     });
 
@@ -113,14 +112,36 @@ $(function() {
         0: {
           items: 1
         },
-        768: {
+        576: {
           items: 2
+        },
+        850: {
+          items: 3
         },
         992: {
           items: 3.5
         }
       }
     });
+
+    if (
+      !$(".prices-wrap").hasClass("owl-carousel") ||
+      !$(".prices-wrap").hasClass("prices-wrap--slider")
+    ) {
+      $(".prices-wrap").addClass("owl-carousel");
+      $(".prices-wrap").owlCarousel({
+        items: 1.7,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          768: {
+            items: 1.7
+          }
+        }
+      });
+    }
   }
 
   $(".show-advantages").on("click", function() {
@@ -167,11 +188,17 @@ $(function() {
       0: {
         items: 1
       },
+      666: {
+        items: 1.4
+      },
       768: {
+        items: 1.7
+      },
+      890: {
         items: 2
       },
       1200: {
-        items: 3
+        items: 2.5
       }
     }
   });

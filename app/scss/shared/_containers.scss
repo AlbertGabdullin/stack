@@ -3,6 +3,7 @@
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
 
   &--white {
     background: #fff;
@@ -12,16 +13,16 @@
     padding: 0;
   }
 
-  @media(max-width: $screen-lg) {
+  @media (max-width: $screen-lg) {
     padding: 0 40px;
     max-width: 1040px;
   }
 
-  @media(max-width: $screen-sm) {
+  @media (max-width: $screen-sm) {
     padding: 0 30px;
   }
 
-  @media(max-width: $screen-xs) {
+  @media (max-width: $screen-xs) {
     padding: 0 20px;
   }
 }
@@ -29,18 +30,25 @@
 .wrap {
   display: flex;
   margin: 0 70px;
- 
 
   &--gray {
     background: $gray-light;
   }
 
-  @media(max-width: $screen-md){
+  &--padding {
+    padding-bottom: 80px;
+
+    @media (max-width: $screen-xs) {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
     display: block;
     margin: 0;
   }
 
-  @media(min-width: 1920px) {
+  @media (min-width: 1920px) {
     max-width: 1920px;
     margin: 0 auto;
   }

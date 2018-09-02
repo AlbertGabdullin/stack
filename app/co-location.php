@@ -15,7 +15,7 @@
 
   <div class="tile-section wrap">
     <div class="container">
-      <div class="tile-items">
+      <div class="tile-items tile-items-width-price">
 
         <div class="tile__item tile__item--text">
           <h3 class="tile__item-head">Услуга размещения серверов в
@@ -41,7 +41,7 @@
               которых доступность данных и безотказная работа приложений на серверах превыше всего.</div>
           </div>
           <div class="tile__item-footer">
-            <div class="price__item-footer-price">
+            <div class="tile__item-footer-price">
               <p>От
                 <span class="yellow">3000 Р</span>
                 <span>/</span>
@@ -49,7 +49,7 @@
               </p>
               <p class="main__service-price-nds">Цена с учетом НДС</p>
             </div>
-            <div class="price__item-footer-button">
+            <div class="tile__item-footer-button">
               <a href="#" class="button">Расчитать стоимость</a>
             </div>
           </div>
@@ -65,7 +65,7 @@
               а также операторам связи, нуждающимся в бесперебойной работе телекоммуникационного оборудования.</div>
           </div>
           <div class="tile__item-footer">
-            <div class="price__item-footer-price">
+            <div class="tile__item-footer-price">
               <p>От
                 <span class="yellow">35000 Р</span>
                 <span>/</span>
@@ -73,7 +73,7 @@
               </p>
               <p class="main__service-price-nds">Цена с учетом НДС</p>
             </div>
-            <div class="price__item-footer-button">
+            <div class="tile__item-footer-button">
               <a href="#" class="button">Расчитать стоимость</a>
             </div>
           </div>
@@ -88,10 +88,10 @@
               внутри дата-центра с изолированным от других клиентов северным залом на 38 или на 50 стойко-мест. </div>
           </div>
           <div class="tile__item-footer">
-            <div class="price__item-footer-price">
+            <div class="tile__item-footer-price">
               <p>Цена по запросу</p>
             </div>
-            <div class="price__item-footer-button">
+            <div class="tile__item-footer-button">
               <a href="#" class="button">Расчитать стоимость</a>
             </div>
           </div>

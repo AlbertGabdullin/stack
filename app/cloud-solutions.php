@@ -2,7 +2,6 @@
   include 'header.php';
 ?>
 
-
 	<section class="page-head wrap" style="background-image: url('/img/cloud-solutions.png');">
 		<div class="container">
 			<div class="breadcrumbs">
@@ -13,28 +12,12 @@
 		</div>
 	</section>
 
-	<div class="page-content wrap">
+	<section class="page-content wrap">
 		<div class="container align-item-center">
 			<div class="page-content__left">
 				<div>
 					<img src="img/cloud-center.jpg" alt="">
 				</div>
-				<section class="partners">
-					<div class="container align-item-center">
-						<div class="partners__item">
-							<img src="img/partners/cisco.png" alt="">
-						</div>
-						<div class="partners__item">
-							<img src="img/partners/netapp.png" alt="">
-						</div>
-						<div class="partners__item">
-							<img src="img/partners/vmware.png" alt="">
-						</div>
-						<div class="partners__item">
-							<img src="img/partners/huawei.png" alt="">
-						</div>
-					</div>
-				</section>
 			</div>
 			<div class="page-content__right">
 				<p>
@@ -45,35 +28,54 @@
 					отказоустойчивость и доступность на уровне 99,9%. Пользуясь нашими услугами Вы получаете в свое распоряжение готовые
 					и отвечающие высоким требованиям доступности вычислительные ресурсы с управлением через панель vCloud Director.
 				</p>
-				<h2>Архитектура облачной платформы STACK 24</h2>
-				<p>
-					Облачная инфраструктура Дата Центра STACK 24 построена исключительно на качественных и проверенных решениях производителей
-					сетевого и серверного оборудования CISCO, Huawei, NetApp, размещенных в Дата Центре уровня TIER III. Серверная инфраструктура
-					облачной платформы построена на основе блейд шасси и блейд серверов CISCO и Huawei на базе процессоров INTEL XEON E5
-					2690v4. Системы хранения данных для облачной платформы реализованы на решениях NetApp FAS и AllFlash. Система виртуализации
-					- VMware vCloud.
-				</p>
+				
+			</div>
+		</div>
+</section>
+
+<section class="page-content wrap wrap--gray">
+	<div class="container">
+		<h3>Архитектура облачной платформы STACK 24</h3>
+		<p>
+			Облачная инфраструктура Дата Центра STACK 24 построена исключительно на качественных и проверенных решениях производителей
+			сетевого и серверного оборудования CISCO, Huawei, NetApp, размещенных в Дата Центре уровня TIER III. Серверная инфраструктура
+			облачной платформы построена на основе блейд шасси и блейд серверов CISCO и Huawei на базе процессоров INTEL XEON E5
+			2690v4. Системы хранения данных для облачной платформы реализованы на решениях NetApp FAS и AllFlash. Система виртуализации
+			- VMware vCloud.
+		</p>
+		<div class="partners-items">
+			<div class="partners__item">
+				<img src="img/partners/cisco.png" alt="">
+			</div>
+			<div class="partners__item">
+				<img src="img/partners/netapp.png" alt="">
+			</div>
+			<div class="partners__item">
+				<img src="img/partners/vmware.png" alt="">
+			</div>
+			<div class="partners__item">
+				<img src="img/partners/huawei.png" alt="">
 			</div>
 		</div>
 	</div>
+</section>
 
-	<div class="page-content wrap">
+	<section class="calculator-section wrap wrap--padding wrap--gray">
 		<div class="container">
 			<div class="c-cloud-calculator">
 				<div class="calculator-info">
-					<h2>Соберите свою конфигурацию</h2>
-					<div class="calculator-info-summ">
-						<h3>
+					<h3>Соберите свою конфигурацию</h3>
+					<div class="calculator-info-summ calculator-info-summ--desktop">
 							<span class="info-summ-result">
 								<span class="number">3600</span> P</span> /
 							<span class="u-va-top info-summ-currency u-text-small">мес</span>
-						</h3>
 						<div class="u-text-muted u-text-small">С учетом НДС</div>
 					</div>
 					<div>
-						<a href="#cloud-form" class="button calculator-button">Заказать</a>
+						<a href="#cloud-form" class="button button-desktop">Заказать</a>
 					</div>
 				</div>
+
 				<div class="calculator-configs">
 
 					<div class="configs-line configs-line-vcpu">
@@ -126,7 +128,22 @@
 							vSata
 						</div>
 						<div class="configs-line-slider">
-							<input type="range" class="cloud-calculator-slider" value="244" min="1" max="256">
+							<input type="range" class="cloud-calculator-slider" value="188" min="1" max="256">
+						</div>
+						<div class="configs-line-value">
+							2
+						</div>
+						<div class="configs-line-currency">
+							Gb
+						</div>
+					</div>
+
+					<div class="configs-line configs-line-ssd">
+						<div class="configs-line-name">
+							SSD
+						</div>
+						<div class="configs-line-slider">
+							<input type="range" class="cloud-calculator-slider" value="140" min="1" max="256">
 						</div>
 						<div class="configs-line-value">
 							2
@@ -156,7 +173,7 @@
 							iPv4
 						</div>
 						<div class="configs-line-slider">
-							<input type="range" class="cloud-calculator-slider" value="4" min="1" max="40">
+							<input type="range" class="cloud-calculator-slider" value="5" min="1" max="40">
 						</div>
 						<div class="configs-line-value">
 							2
@@ -167,9 +184,19 @@
 					</div>
 
 				</div>
+
+				<div class="calculator-footer">
+					<div class="calculator-info-summ calculator-info-summ--mobile">
+							<span class="info-summ-result">
+								<span class="number">3600</span> P</span> /
+							<span class="u-va-top info-summ-currency u-text-small">мес</span>
+						<div class="u-text-muted u-text-small">С учетом НДС</div>
+					</div>
+					<a href="#" class="button">Заказать</a>
+				</div>
 			</div>
 		</div>
-	</div>
+</section>
 
 	<div class="wrap">
 		<div class="container">

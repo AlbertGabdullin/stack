@@ -36,30 +36,30 @@
 			<div class="footer__right">
 				<ul class="footer__menu">
 					<li>
-						<a href="#">Облачные решения</a>
+						<a href="/cloud-solutions.php">Облачные решения</a>
 					</li>
 					<li>
-						<a href="#">Аренда сервера</a>
+						<a href="/arenda-servera.php">Аренда сервера</a>
 					</li>
 					<li>
-						<a href="#">Размещение серверов</a>
+						<a href="/co-location.php">Размещение серверов</a>
 						<ul>
 							<li>
-								<a href="#">Аренда юнит-места</a>
+								<a href="/arenda-unit-mesta.php">Аренда юнит-места</a>
 							</li>
 							<li>
-								<a href="#">Аренда стойко-места</a>
+								<a href="/arenda-stoiko-mesta.php">Аренда стойко-места</a>
 							</li>
 							<li>
-								<a href="#">Аренда серверной ячейки</a>
+								<a href="/arenda-server-cell.php">Аренда серверной ячейки</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="#">О компании</a>
+						<a href="/about-us.php">О компании</a>
 						<ul>
 							<li>
-								<a href="#">Документы</a>
+								<a href="/docs.php">Документы</a>
 							</li>
 						</ul>
 					</li>
@@ -67,7 +67,7 @@
 
 				<ul class="footer__menu">
 					<li>
-						<a href="#">Дополнительные услуги</a>
+						<a href="/additional-services.php">Дополнительные услуги</a>
 						<ul>
 							<li>
 								<a href="#">Аренда изолированного частного облака</a>
@@ -79,14 +79,14 @@
 								<a href="#">Администрирование</a>
 							</li>
 							<li>
-								<a href="#">Резервное копирование</a>
+								<a href="backup.php">Резервное копирование</a>
 							</li>
 							<li>
 								<a href="#">Администрирование</a>
 							</li>
 
 							<li>
-								<a href="#">Аренда ПО Microsoft</a>
+								<a href="/arenda-po.php">Аренда ПО Microsoft</a>
 							</li>
 
 							<li>
@@ -95,10 +95,10 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">Блок</a>
+						<a href="/articles.php">Блог</a>
 					</li>
 					<li>
-						<a href="#">Контакты</a>
+						<a href="/contacts.php">Контакты</a>
 					</li>
 				</ul>
 			</div>

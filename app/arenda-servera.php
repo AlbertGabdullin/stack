@@ -13,7 +13,7 @@
     </div>
   </section>
 
-  <section class="page-content wrap">
+  <section class="page-content wrap wrap--gray">
     <div class="container align-item-center">
       <div class="page-content__left">
         <img src="img/arenda-image.png" alt="">
