@@ -1,32 +1,24 @@
 .p-articles {
-  .container {
-    h1 {
-      margin-bottom: 15px;
-      margin-top: 70px;
+  .articles-news {
+    padding: 70px 0;
+  }
+
+  .articles-list {
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .useful-articles__item {
+      width: 310px;
+      margin-bottom: 30px;
     }
+  }
 
-    .articles-news {
-      padding: 70px 0;
-    }
-
-    .articles-list {
-      width: 100%;
-      display: flex !important;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      .useful-articles__item {
-        
-        width: 310px;
-        margin-bottom: 30px;
-      }
-    }
-
-    .useful-articles-items {
-      .useful-articles__item {
-        // возможно наебнется слайдер, но это не точно
-        width: 310px;
-      }
+  .useful-articles-items {
+    .useful-articles__item {
+      // возможно наебнется слайдер, но это не точно
+      width: 310px;
     }
   }
 }

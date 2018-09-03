@@ -14,7 +14,7 @@
 		</div>
 	</section>
 
-	<section class="page-content useful-articles wrap wrap--gray">
+	<section class="page-content p-articles useful-articles wrap wrap--gray">
 		<div class="container u-mb-3">
 			<h2>Новости компании</h2>
 
