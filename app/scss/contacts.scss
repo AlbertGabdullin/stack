@@ -3,8 +3,13 @@
   padding-bottom: 80px;
 
   @media (max-width: $screen-xs) {
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 50px;
+
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 }
 
@@ -12,6 +17,7 @@
   width: 100%;
   background: $white;
   display: flex;
+  flex-wrap: wrap;
 
   .contacts-info {
     padding: 40px;
@@ -25,6 +31,10 @@
         font-size: 20px;
         margin-bottom: 8px;
       }
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
     }
   }
 
@@ -54,6 +64,10 @@
           color: $accent-yellow;
         }
       }
+    }
+
+    @media (max-width: $screen-md) {
+      width: 100%;
     }
   }
 }
